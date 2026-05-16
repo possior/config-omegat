@@ -7,8 +7,12 @@ while
 do
   case "$1" in
     -d | --default)
-      arguments[default]=1
+      arguments[d]=1
       shift 1
+      ;;
+    -o | --os | --operating-system)
+      arguments[o]="$2"
+      shift 2
       ;;
     *)
       exit
@@ -41,7 +45,7 @@ function install() {
     return
   fi
   if
-    [[ -f "$3" && "${arguments[default]}" -eq 0 ]]
+    [[ -f "$3" && "${arguments[d]}" -eq 0 ]]
   then
     read -p ":: override $3? $prompt " decision
   fi
@@ -62,4 +66,10 @@ then
   ROOT="$(git rev-parse --show-toplevel)"
 else
   exit
+fi
+
+if
+  [[ "${arguments[o]}" == "endeavour" ]]
+then
+  echo "this is placeholder"
 fi
