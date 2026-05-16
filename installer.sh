@@ -70,7 +70,12 @@ else
 fi
 
 if
-  [[ "${arguments[o]}" == "arch" || "${arguments[o]}" == "endeavour" ]]
+  [[ "${arguments[o]}" == "arch" ]]
+then
+  install -y "$ROOT/source/.omegat/omegat.prefs" "$HOME/.omegat/omegat.prefs"
+  install -y "$ROOT/source/.omegat/uiLayout.xml" "$HOME/.omegat/uiLayout.xml"
+elif
+  [[ "${arguments[o]}" == "endeavour" ]]
 then
   install -y "$ROOT/source/.omegat/omegat.prefs" "$HOME/.omegat/omegat.prefs"
   install -y "$ROOT/source/.omegat/uiLayout.xml" "$HOME/.omegat/uiLayout.xml"
