@@ -74,4 +74,7 @@ if
 then
   install -y "$ROOT/source/.omegat/omegat.prefs" "$HOME/.omegat/omegat.prefs"
   install -y "$ROOT/source/.omegat/uiLayout.xml" "$HOME/.omegat/uiLayout.xml"
+else
+  install -y "$ROOT/source/.omegat/omegat.prefs" "$HOME/.omegat/omegat.prefs"
+  install -y "$ROOT/source/.omegat/uiLayout.xml" "$HOME/.omegat/uiLayout.xml"
 fi
