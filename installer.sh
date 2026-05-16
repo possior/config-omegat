@@ -44,15 +44,11 @@ function install() {
     [[ -f "$3" && "${arguments[default]}" -eq 0 ]]
   then
     read -p ":: override $3? $prompt " decision
-  elif
-    [[ -f "$3" && "${arguments[default]}" -eq 1 ]]
-  then
-    read -p ":: override $3? $prompt " decision
   fi
   if
     [[ "$decision" == "y" || "$decision" == "Y" ]]
   then
-    cp -f "$1" "$2"
+    cp -f "$2" "$3"
   elif
     [[ "$decision" != "n" && "$decision" != "N" ]]
   then
