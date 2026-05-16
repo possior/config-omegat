@@ -47,7 +47,8 @@ function install() {
   if
     [[ -f "$3" && "${arguments[d]}" -eq 0 ]]
   then
-    read -p ":: override $3? $prompt " decision
+    read -p ":: override $3? $prompt " userinput
+    decision="${userinput:-"$decision"}"
   fi
   if
     [[ "$decision" == "y" || "$decision" == "Y" ]]
