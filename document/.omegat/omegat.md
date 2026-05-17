@@ -8,6 +8,11 @@ xml
 
 # オメガティー設定
 
+オメガティーのギットハブ・リポジトリ：
+
+- [omegat-org/omegat](https://github.com/omegat-org/omegat/)
+- [omegat-org/omegat/test-acceptance/data/config/omegat.prefs](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/omegat.prefs)
+
 ## 目次
 
 - [基本構造](#基本構造)
@@ -45,6 +50,11 @@ xml
 ## 各種設定
 
 # OmegaT Configuration
+
+OmegaT's GitHub repository:
+
+- [omegat-org/omegat](https://github.com/omegat-org/omegat/)
+- [omegat-org/omegat/test-acceptance/data/config/omegat.prefs](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/omegat.prefs)
 
 ## Table of Contents
 
