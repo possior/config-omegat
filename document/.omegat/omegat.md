@@ -31,13 +31,13 @@ xml
 オメガティーの設定を格納する`omegat`要素を開始・終了する。
 
 ``` xml
-<omegat><!-- OmegaT configuration --></omegat>
+<omegat><!-- オメガティーの設定 --></omegat>
 ```
 
 オメガティーの設定を格納する第`1.0`版の`preference`要素を開始・終了する。
 
 ``` xml
-<preference version="1.0"><!-- OmegaT preferences --></preference>
+<preference version="1.0"><!-- オメガティーの設定 --></preference>
 ```
 
 ## 各種設定
