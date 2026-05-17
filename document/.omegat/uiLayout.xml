@@ -14,6 +14,12 @@
 
 ## 基本構造
 
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<VLDocking version="2.1">
+</VLDocking>
+```
+
 ## 各種設定
 
 # OmegaT Configuration
@@ -29,3 +35,9 @@
 ## Basic Structure
 
 ## Various Settings
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<VLDocking version="2.1">
+</VLDocking>
+```
