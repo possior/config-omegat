@@ -1,12 +1,8 @@
-echo ":: STATE :: initiating variables"
 directory="${HOME}/.omegat"
 temporary="$(mktemp -d)"
 repository="https://github.com/possior/config-omegat.git"
 system=""
 version="default"
-echo ":: STATE :: initiated variables
-
-echo ":: STATE :: obtaining arguments"
 while
   [[ "${#}" -gt 0 ]]
 do
@@ -15,7 +11,6 @@ do
       if
         [[ -z "${2}" || "${2}" =~ ^- ]]
       then
-        echo ":: ERROR :: ${1} requires a value"
         exit 1
       fi
       system="${2}"
@@ -25,20 +20,16 @@ do
       if
         [[ -z "${2}" || "${2}" =~ ^- ]]
       then
-        echo ":: ERROR :: ${1} requires a value"
         exit 1
       fi
       version="${2}"
       shift 2
       ;;
     *)
-      echo ":: ERROR :: ${1} is not a valid argument"
       exit 1
       ;;
   esac
 done
-echo ":: STATE :: obtained arguments"
-
 git clone "${repository}" "${temporary}" -b "${version}"
 cd "${temporary}"
 rm -rf "${temporary}"
