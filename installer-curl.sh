@@ -91,7 +91,7 @@ if
 then
   mkdir -p "${directory}"
 fi
-git clone "${repository}" "${temporary}" -b "${version}"
+git clone -qb "${version}" "${repository}" "${temporary}"
 cd "${temporary}"
 rm -rf "${temporary}"
 exit
