@@ -7,6 +7,10 @@ while
   [[ "${#}" -gt 0 ]]
 do
   case "${1}" in
+    "-d" | "--default")
+      mode="default"
+      shift 1
+      ;;
     "-o" | "--os" | "--operating-system" | "--system")
       if
         [[ -z "${2}" || "${2}" =~ ^- ]]
@@ -41,6 +45,47 @@ case "${system,,}" in
     directory="${HOME}/.omegat"
     ;;
 esac
+function install() {
+  if
+    [[ "${#}" -ne 3 ]]
+  then
+    exit
+  fi
+  case "${1}" in
+    "-y" | "--yea" | "--yes")
+      decision="y"
+      prompt="[Y/n]"
+      ;;
+    "-n" | "--nay" | "--no")
+      decision="n"
+      prompt="[y/N]"
+      ;;
+    *)
+      return
+      ;;
+  esac
+  if
+    [[ ! -f "${2}" ]]
+  then
+    return
+  fi
+  if
+    [[ -f "${3}" && -z "${mode}" ]]
+  then
+    read -p ":: PROMPT :: override ${3}? ${prompt} " userinput
+    decision="${userinput:-"${decision}"}"
+  fi
+  case "${decision,,}" in
+    "y" | "yea" | "yes")
+      cp -f "${2}" "${3}"
+      ;;
+    "n" | "nay" | "no")
+      ;;
+    *)
+      return
+      ;;
+  esac
+}
 if
   [[ ! -d "${directory}" ]]
 then
