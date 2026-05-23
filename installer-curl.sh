@@ -1,4 +1,5 @@
 directory="${HOME}/.omegat"
+mode="prompt"
 temporary="$(mktemp -d)"
 repository="https://github.com/possior/config-omegat.git"
 system=""
@@ -8,7 +9,7 @@ while
 do
   case "${1}" in
     "-d" | "--default")
-      mode="default"
+      unset mode
       shift 1
       ;;
     "-o" | "--os" | "--operating-system" | "--system")
@@ -70,7 +71,7 @@ function install() {
     return
   fi
   if
-    [[ -f "${3}" && -z "${mode}" ]]
+    [[ -f "${3}" && "${mode}" == "prompt" ]]
   then
     read -p ":: PROMPT :: override ${3}? ${prompt} " userinput
     decision="${userinput:-"${decision}"}"
@@ -80,6 +81,7 @@ function install() {
       cp -f "${2}" "${3}"
       ;;
     "n" | "nay" | "no")
+      return
       ;;
     *)
       return
