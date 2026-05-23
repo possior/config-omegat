@@ -41,6 +41,12 @@ case "${system,,}" in
     directory="${HOME}/.omegat"
     ;;
 esac
+if
+  [[ ! -d "${directory}" ]]
+then
+  mkdir -p "${directory}"
+fi
 git clone "${repository}" "${temporary}" -b "${version}"
 cd "${temporary}"
 rm -rf "${temporary}"
+exit
