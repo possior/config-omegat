@@ -1,38 +1,44 @@
-directory="$HOME/.omegat"
+echo ":: STATE :: initiating variables"
+directory="${HOME}/.omegat"
 temporary="$(mktemp -d)"
 repository="https://github.com/possior/config-omegat.git"
 system=""
 version="default"
+echo ":: STATE :: initiated variables
+
+echo ":: STATE :: obtaining arguments"
 while
-  [[ "$#" -gt 0 ]]
+  [[ "${#}" -gt 0 ]]
 do
-  case "$1" in
-    -o | --os | --operating-system | --system)
+  case "${1}" in
+    "-o" | "--os" | "--operating-system" | "--system")
       if
-        [[ -z "$2" || "$2" =~ ^- ]]
+        [[ -z "${2}" || "${2}" =~ ^- ]]
       then
-        echo ":: ERROR :: $1 requires a value"
+        echo ":: ERROR :: ${1} requires a value"
         exit 1
       fi
-      system="$2"
+      system="${2}"
       shift 2
       ;;
-    -v | --ver | --version)
+    "-v" | "--ver" | "--version")
       if
-        [[ -z "$2" || "$2" =~ ^- ]]
+        [[ -z "${2}" || "${2}" =~ ^- ]]
       then
-        echo ":: ERROR :: $1 requires a value"
+        echo ":: ERROR :: ${1} requires a value"
         exit 1
       fi
-      version="$2"
+      version="${2}"
       shift 2
       ;;
     *)
-      echo ":: ERROR :: $1 is not a valid argument"
+      echo ":: ERROR :: ${1} is not a valid argument"
       exit 1
       ;;
   esac
 done
-git clone "$repository" "$temporary" -b "$version"
-cd "$temporary"
-rm -rf "$temporary"
+echo ":: STATE :: obtained arguments"
+
+git clone "${repository}" "${temporary}" -b "${version}"
+cd "${temporary}"
+rm -rf "${temporary}"
