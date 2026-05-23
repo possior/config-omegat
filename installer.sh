@@ -1,17 +1,18 @@
 declare -A arguments
 
 arguments[default]=0
+arguments[operating-system]=""
 
 while
   [[ "$#" -gt 0 ]]
 do
   case "$1" in
     -d | --default)
-      arguments[d]=1
+      arguments[default]=1
       shift 1
       ;;
     -o | --os | --operating-system)
-      arguments[o]="$2"
+      arguments[operating-system]="$2"
       shift 2
       ;;
     *)
@@ -45,7 +46,7 @@ function install() {
     return
   fi
   if
-    [[ -f "$3" && "${arguments[d]}" -eq 0 ]]
+    [[ -f "$3" && "${arguments[default]}" -eq 0 ]]
   then
     read -p ":: override $3? $prompt " userinput
     decision="${userinput:-"$decision"}"
@@ -70,12 +71,12 @@ else
 fi
 
 if
-  [[ "${arguments[o]}" == "arch" ]]
+  [[ "${arguments[operating-system]}" == "arch" ]]
 then
   install -y "$ROOT/source/.omegat/omegat.prefs" "$HOME/.omegat/omegat.prefs"
   install -y "$ROOT/source/.omegat/uiLayout.xml" "$HOME/.omegat/uiLayout.xml"
 elif
-  [[ "${arguments[o]}" == "endeavour" ]]
+  [[ "${arguments[operating-system]}" == "endeavour" ]]
 then
   install -y "$ROOT/source/.omegat/omegat.prefs" "$HOME/.omegat/omegat.prefs"
   install -y "$ROOT/source/.omegat/uiLayout.xml" "$HOME/.omegat/uiLayout.xml"
