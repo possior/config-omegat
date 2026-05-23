@@ -30,6 +30,17 @@ do
       ;;
   esac
 done
+case "${system,,}" in
+  "arch" | "archlinux")    # https://archlinux.org/
+    directory="${HOME}/.omegat"
+    ;;
+  "endeavour" | "endeavouros")    # https://endeavouros.com/
+    directory="${HOME}/.omegat"
+    ;;
+  *)
+    directory="${HOME}/.omegat"
+    ;;
+esac
 git clone "${repository}" "${temporary}" -b "${version}"
 cd "${temporary}"
 rm -rf "${temporary}"
