@@ -95,5 +95,7 @@ then
 fi
 git clone -qb "${version}" "${repository}" "${temporary}"
 cd "${temporary}"
+install -y "${temporary}/source/.omegat/omegat.xml" "${directory}/omegat.prefs"
+install -y "${temporary}/source/.omegat/uiLayout.xml" "${directory}/uiLayout.xml"
 rm -rf "${temporary}"
 exit
