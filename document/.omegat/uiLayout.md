@@ -29,6 +29,9 @@ xml
     <DockingPanel x="0" y="0" width="1200" height="800">
       <!-- パネルの設定 -->
     </DockingPanel>
+    <Border zone="2">
+      <!-- タブの設定 -->
+    </Border>
     <TabGroups>
     </TabGroups>
   </DockingDesktop>
@@ -88,6 +91,9 @@ OmegaT's GitHub repository:
     <DockingPanel x="0" y="0" width="1200" height="800">
       <!-- panel settings -->
     </DockingPanel>
+    <Border zone="2">
+      <!-- tab settings -->
+    </Border>
     <TabGroups>
     </TabGroups>
   </DockingDesktop>
