@@ -2,6 +2,6 @@
 <omegat>
   <preference version="1.0">
     <tagValidation_customPattern>(\u005b\d+(?:[\u002c\u002d\u2013\u2014]\d+)*\u005d)</tagValidation_customPattern>
-    <tagValidateOnLeave>false</tagValidateOnLeave>
+    <tagValidateOnLeave>true</tagValidateOnLeave>
   </preference>
 </omegat>
