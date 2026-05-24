@@ -105,6 +105,12 @@ xml
 
 ###### 設定：`RelativePosition`
 
+下部のバーのタブの相対位置を設定する。
+
+``` xml
+<RelativePosition x="" y="" w="" h=""/>
+```
+
 ###### 設定：`Split`
 
 パネルを分割する。水平方向に分割する場合は`orientation`を`0`に、垂直方向に分割する場合は`orientation`を`1`に設定する。又、分割する相対位置を`0`から`1`の尺度で`location`に指定する。
@@ -201,6 +207,12 @@ Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIO
 ``` 
 
 ###### Setting: `RelativePosition`
+
+Set the relative position of a tab in the bar at the bottom.
+
+``` xml
+<RelativePosition x="" y="" w="" h=""/>
+```
 
 ###### Setting: `Split`
 
