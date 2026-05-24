@@ -169,6 +169,14 @@ Start and end the `TabGroups` element. It is uncertain why this element exists h
 
 ## Various Settings
 
+###### Setting: `Dockable`
+
+Create a pane. Define the type by the `Key` element.
+
+``` xml
+<Dockable><!-- key --></Dockable>
+```
+
 ###### Setting: `Split`
 
 Split the panel. If you would like to split it horizontally, set `orientation` to `0`, and if vertically, to `1`. Also, set a relative location to split in a scale from `0` to `1`.
