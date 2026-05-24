@@ -27,22 +27,22 @@
       </Split>
     </DockingPanel>
     <Border zone="2">
-<Dockable>
-<Key dockName="SEGMENTPROPERTIES"/>
-<RelativePosition x="0.004166666883975267" y="0.00699300691485405" w="0.028333334252238274" h="0.9860140085220337" />
-</Dockable>
-<Dockable>
-<Key dockName="MULTIPLE_TRANS"/>
-<RelativePosition x="0.004166666883975267" y="0.007256893906742334" w="0.2383333295583725" h="0.9854862093925476" />
-</Dockable>
-<Dockable>
-<Key dockName="COMMENTS"/>
-<RelativePosition x="0.1599999964237213" y="0.007256893906742334" w="0.17499999701976776" h="0.9854862093925476" />
-</Dockable>
-<Dockable>
-<Key dockName="NOTES"/>
-<RelativePosition x="0.1599999964237213" y="0.007256893906742334" w="0.33916667103767395" h="0.9854862093925476" />
-</Dockable>
+      <Dockable>
+        <Key dockName="SEGMENTPROPERTIES"/>
+        <RelativePosition x="0.004166666883975267" y="0.00699300691485405" w="0.028333334252238274" h="0.9860140085220337" />
+      </Dockable>
+      <Dockable>
+        <Key dockName="MULTIPLE_TRANS"/>
+        <RelativePosition x="0.004166666883975267" y="0.007256893906742334" w="0.2383333295583725" h="0.9854862093925476" />
+      </Dockable>
+      <Dockable>
+        <Key dockName="COMMENTS"/>
+        <RelativePosition x="0.1599999964237213" y="0.007256893906742334" w="0.17499999701976776" h="0.9854862093925476" />
+      </Dockable>
+      <Dockable>
+        <Key dockName="NOTES"/>
+        <RelativePosition x="0.1599999964237213" y="0.007256893906742334" w="0.33916667103767395" h="0.9854862093925476" />
+      </Dockable>
     </Border>
     <TabGroups>
     </TabGroups>
