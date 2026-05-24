@@ -17,6 +17,7 @@ xml
 
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
+  - [設定：`tagValidation_customPattern`](#設定；tagValidation_customPattern)
 
 ## 基本構造
 
@@ -49,6 +50,8 @@ xml
 
 ## 各種設定
 
+###### 設定：`tagValidation_customPattern`
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository:
@@ -60,6 +63,7 @@ OmegaT's GitHub repository:
 
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
+  - [Setting: `tagValidation_customPattern`](#setting-tagValidation_customPattern)
 
 ## Basic Structure
 
@@ -91,3 +95,5 @@ Start and end the `preference` element that contains OmegaT preferences version 
 ```
 
 ## Various Preferences
+
+###### Setting: `tagValidation_customPattern`
