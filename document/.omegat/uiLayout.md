@@ -57,6 +57,12 @@ xml
 <DockingPanel x="0" y="0" width="1200" height="800"><!-- パネルの設定 -->DockingPanel>
 ```
 
+`TabGroups`要素を開始・終了する。何を設定する要素か不明。
+
+``` xml
+<TabGroups></TabGroups>
+```
+
 ## 各種設定
 
 # OmegaT Configuration
@@ -106,6 +112,12 @@ Start and end the `DockingPanel` element. Set the panel width to `1200` and heig
 
 ``` xml
 <DockingPanel x="0" y="0" width="1200" height="800"><!-- panel settings -->DockingPanel>
+```
+
+Start and end the `TabGroups` element. It is uncertain why this element exists here.
+
+``` xml
+<TabGroups></TabGroups>
 ```
 
 ## Various Settings
