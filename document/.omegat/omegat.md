@@ -18,6 +18,7 @@ xml
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
   - [設定：`tagValidation_customPattern`](#設定tagValidation_customPattern)
+  - [設定：`tagValidateOnLeave`](#設定tagValidateOnLeave)
 
 ## 基本構造
 
@@ -58,6 +59,14 @@ xml
 <tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
 ```
 
+###### 設定：`tagValidateOnLeave`
+
+分節を移動する際に、タグが不一致である場合はエラーを表示する。
+
+``` xml
+<tagValidateOnLeave><!-- 真理値 --></tagValidateOnLeave>
+```
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository:
@@ -70,6 +79,7 @@ OmegaT's GitHub repository:
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
   - [Setting: `tagValidation_customPattern`](#setting-tagValidation_customPattern)
+  - [Setting: `tagValidateOnLeave`](#setting-tagValidateOnLeave)
 
 ## Basic Structure
 
@@ -108,4 +118,12 @@ Define a regular expression that identifies valid tags to be preserved in the tr
 
 ``` xml
 <tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
+```
+
+###### 設定：`tagValidateOnLeave`
+
+分節を移動する際に、タグが不一致である場合はエラーを表示する。
+
+``` xml
+<tagValidateOnLeave><!-- 真理値 --></tagValidateOnLeave>
 ```
