@@ -3,6 +3,7 @@
 ``` text
 xml
 └── VLDocking
+    └── DockingDesktop
 ```
 
 # オメガティー設定
@@ -22,7 +23,9 @@ xml
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
-  <!-- オメガティーの設定 -->
+  <DockingDesktop name="">
+    <!-- オメガティーの設定 -->
+  </DockingDesktop>
 </VLDocking>
 ```
 
@@ -36,6 +39,12 @@ xml
 
 ``` xml
 <VLDocking version="2.1"><!-- オメガティーの設定 --></VLDocking>
+```
+
+無名の`DockingDesktop`要素を開始・終了する。ペインの表示に関する設定を其中に定義する。`name`属性が必要か要検討。
+
+``` xml
+<DockingDesktop name=""><!-- ペインの表示の定義 --></DockingDesktop>
 ```
 
 ## 各種設定
@@ -57,7 +66,9 @@ xml
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
-  <!-- OmegaT configuration -->
+  <DockingDesktop name="">
+    <!-- OmegaT configuration -->
+  </DockingDesktop>
 </VLDocking>
 ```
 
@@ -71,4 +82,10 @@ Start and end the `VLDocking` element version `2.1`. `VLDocking` is a framework 
 
 ``` xml
 <VLDocking version="2.1"><!-- OmegaT configuration --></VLDocking>
+```
+
+Start and end the unnamed `DockingDesktop` element. Inside, define display settings for panes. It is uncertain whether the `name` attribute is necessary.
+
+``` xml
+<DockingDesktop name=""><!-- pane display settings --></DockingDesktop>
 ```
