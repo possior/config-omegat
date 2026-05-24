@@ -26,6 +26,7 @@ xml
 
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
+  - [設定：`Split`](#設定split)
 
 ## 基本構造
 
@@ -83,6 +84,14 @@ xml
 
 ## 各種設定
 
+###### 設定：`Split`
+
+パネルを分割する。水平方向に分割する場合は`orientation`を`0`に、垂直方向に分割する場合は`orientation`を`1`に設定する。又、分割する相対位置を`0`から`1`の尺度で`location`に指定する。
+
+``` xml
+<Split orientation="" location=""><!-- ペインの設定 --></Split>
+```
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository:
@@ -94,6 +103,7 @@ OmegaT's GitHub repository:
 
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
+  - [Setting: `Split`](#setting-split)
 
 ## Basic Structure
 
@@ -149,3 +159,11 @@ Start and end the `TabGroups` element. It is uncertain why this element exists h
 ```
 
 ## Various Settings
+
+###### Setting: `Split`
+
+Split the panel. If you would like to split it horizontally, set `orientation` to `0`, and if vertically, to `1`. Also, set a relative location to split in a scale from `0` to `1`.
+
+``` xml
+<Split orientation="" location=""><!-- pane settings --></Split>
+```
