@@ -5,7 +5,13 @@ xml
 └── VLDocking
     └── DockingDesktop
         ├── DockingPanel
+        │   └── Split
+        │       └── Dockable
+        │           └── Key
         ├── Border
+        │   └── Dockable
+        │       ├── Key
+        │       └── RelativePosition
         └── TabGroups
 ```
 
