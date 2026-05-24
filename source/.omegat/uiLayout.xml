@@ -3,6 +3,8 @@
   <DockingDesktop name="">
     <DockingPanel x="0" y="0" width="1200" height="800">
     </DockingPanel>
+    <Border zone="2">
+    </Border>
     <TabGroups>
     </TabGroups>
   </DockingDesktop>
