@@ -5,6 +5,7 @@ xml
 └── VLDocking
     └── DockingDesktop
         ├── DockingPanel
+        ├── Border
         └── TabGroups
 ```
 
