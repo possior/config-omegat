@@ -63,6 +63,12 @@ xml
 <DockingPanel x="0" y="0" width="1200" height="800"><!-- パネルの設定 -->DockingPanel>
 ```
 
+`Border`要素を開始・終了する。パネル下部のタブに関する設定を格納する。`zone`属性が何を意味するか不明。
+
+``` xml
+<Border zone="2"><!-- タブの設定 --></Border>
+```
+
 `TabGroups`要素を開始・終了する。何を設定する要素か不明。
 
 ``` xml
@@ -125,6 +131,11 @@ Start and end the `DockingPanel` element. Set the panel width to `1200` and heig
 <DockingPanel x="0" y="0" width="1200" height="800"><!-- panel settings -->DockingPanel>
 ```
 
+Start and end the `Border` element. It stores settings related to tabs at the bottom of the panel. It is uncertain what the `zone` attribute mean.
+
+``` xml
+<Border zone="2"><!-- tab settings --></Border>
+```
 Start and end the `TabGroups` element. It is uncertain why this element exists here.
 
 ``` xml
