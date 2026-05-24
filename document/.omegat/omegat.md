@@ -120,10 +120,10 @@ Define a regular expression that identifies valid tags to be preserved in the tr
 <tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
 ```
 
-###### 設定：`tagValidateOnLeave`
+###### Setting: `tagValidateOnLeave`
 
-分節を移動する際に、タグが不一致である場合はエラーを表示する。
+Err that a tag does not match when moving to another segment.
 
 ``` xml
-<tagValidateOnLeave><!-- 真理値 --></tagValidateOnLeave>
+<tagValidateOnLeave><!-- Boolean value --></tagValidateOnLeave>
 ```
