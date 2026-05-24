@@ -3,27 +3,27 @@
   <DockingDesktop name="">
     <DockingPanel x="0" y="0" width="1200" height="800">
       <Split orientation="1" location="0.6981450252951096">
-      <Split orientation="0" location="0.7985185185185185">
-      <Dockable>
-      <Key dockName="EDITOR"/>
-      </Dockable>
-      <Split orientation="1" location="0.4987864077669903">
-      <Dockable>
-      <Key dockName="DICTIONARY"/>
-      </Dockable>
-      <Dockable>
-      <Key dockName="GLOSSARY"/>
-      </Dockable>
-      </Split>
-      </Split>
-      <Split orientation="0" location="0.49925925925925924">
-      <Dockable>
-      <Key dockName="MACHINE_TRANSLATE"/>
-      </Dockable>
-      <Dockable>
-      <Key dockName="MATCHES"/>
-      </Dockable>
-      </Split>
+        <Split orientation="0" location="0.7985185185185185">
+          <Dockable>
+          <Key dockName="EDITOR"/>
+          </Dockable>
+          <Split orientation="1" location="0.4987864077669903">
+            <Dockable>
+            <Key dockName="DICTIONARY"/>
+            </Dockable>
+            <Dockable>
+            <Key dockName="GLOSSARY"/>
+            </Dockable>
+          </Split>
+        </Split>
+        <Split orientation="0" location="0.49925925925925924">
+          <Dockable>
+          <Key dockName="MACHINE_TRANSLATE"/>
+          </Dockable>
+          <Dockable>
+          <Key dockName="MATCHES"/>
+          </Dockable>
+        </Split>
       </Split>
     </DockingPanel>
     <Border zone="2">
