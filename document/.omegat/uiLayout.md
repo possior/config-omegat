@@ -121,6 +121,8 @@ OmegaT's GitHub repository:
 
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
+  - [Setting: `Dockable`](#setting-dockable)
+  - [Setting: `Key`](#setting-key)
   - [Setting: `Split`](#setting-split)
 
 ## Basic Structure
@@ -185,6 +187,14 @@ Create a pane. Define the type by the `Key` element.
 ``` xml
 <Dockable><!-- key --></Dockable>
 ```
+
+###### Setting: `Key`
+
+Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIONARIES`), editor (`EDITOR`), glossaries (`GLOSSARIES`), machine translations (`MACHINE_TRANSLATE`), fuzzy matches (`MATCH`), notepad (`NOTES`), multiple translations (`MULTIPLE_TRANS`), segment properties (`SEGMENTPROPERTIES`) panes.
+
+``` xml
+<Key dockName=""/>
+``` 
 
 ###### Setting: `Split`
 
