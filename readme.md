@@ -14,7 +14,7 @@
 以下の命令文で最新版の設定を実装できる。
 
 ``` bash
-curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s 
+bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh)
 ```
 
 実装方法を変更する場合は、此の命令文に続けて選択肢を付す事。
@@ -41,7 +41,7 @@ OmegaT configuration files that I reuse.
 Install the latest configuration using the following command.
 
 ``` bash
-curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s 
+bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh)
 ```
 
 To change the implementation method, add options listed below to this command.
