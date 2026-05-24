@@ -90,7 +90,7 @@ xml
 ペインを作成する。ペインの種類は`Key`要素で指定する。
 
 ``` xml
-<Dockable><!-- key --></Dockable>
+<Dockable><!-- key要素 --></Dockable>
 ```
 
 ###### 設定：`Split`
