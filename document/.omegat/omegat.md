@@ -82,6 +82,8 @@ xml
 
 ## 正規表現
 
+文字列をパターン認識する為に使用される表現様式を**正規表現**と言う。拡張された表現も存在するが、オメガティーは一般的な正規表現を用いて、タグ等を認識して居る。
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository:
@@ -154,3 +156,5 @@ Define a regular expression that identifies tags to remove from the translation.
 ```
 
 ## Regular Expression
+
+A **regular expression** (**regex**) is a formatted expression used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
