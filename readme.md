@@ -6,7 +6,10 @@
 
 ## 目次
 
+- [複製方法](#複製方法)
 - [公開版一覧](#公開版一覧)
+
+## 複製方法
 
 ## 公開版一覧
 
@@ -18,7 +21,10 @@ OmegaT configuration files that I reuse.
 
 ## List of Contents
 
+- [How to Duplicate](#how-to-duplicate)
 - [List of Versions](#list-of-versions)
+
+## How to Duplicate
 
 ## List of Versions
 
