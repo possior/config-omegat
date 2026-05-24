@@ -24,7 +24,10 @@ xml
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
   <DockingDesktop name="">
-    <!-- オメガティーの設定 -->
+    <DockingPanel x="0" y="0" width="1200" height="800">
+    </DockingPanel>
+    <TabGroups>
+    </TabGroups>
   </DockingDesktop>
 </VLDocking>
 ```
@@ -65,7 +68,10 @@ xml
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
   <DockingDesktop name="">
-    <!-- OmegaT configuration -->
+    <DockingPanel x="0" y="0" width="1200" height="800">
+    </DockingPanel>
+    <TabGroups>
+    </TabGroups>
   </DockingDesktop>
 </VLDocking>
 ```
