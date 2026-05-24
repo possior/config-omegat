@@ -76,7 +76,7 @@ xml
 <VLDocking version="2.1">
   <DockingDesktop name="">
     <DockingPanel x="0" y="0" width="1200" height="800">
-      <!-- Panel Settings -->
+      <!-- panel settings -->
     </DockingPanel>
     <TabGroups>
     </TabGroups>
@@ -93,7 +93,7 @@ XML declaration - declare that the file uses `xml` version `1.0` encoded in `UTF
 Start and end the `VLDocking` element version `2.1`. `VLDocking` is a framework used in `java` applications.
 
 ``` xml
-<VLDocking version="2.1"><!-- OmegaT configuration --></VLDocking>
+<VLDocking version="2.1"><!-- omegat configuration --></VLDocking>
 ```
 
 Start and end the unnamed `DockingDesktop` element. This should define the window settings. It is uncertain whether the `name` attribute is necessary.
