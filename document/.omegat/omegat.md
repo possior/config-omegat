@@ -1,4 +1,4 @@
-[日本語](#オメガティー設定)｜[English](#omegat-configuration)｜[`omegat.prefs`](../../source/.omegat/omegat.prefs)
+[日本語](#オメガティー設定)｜[English](#omegat-configuration)｜[`omegat.prefs`](../../source/.omegat/omegat.xml)
 
 ``` text
 xml
