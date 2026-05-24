@@ -27,6 +27,7 @@ xml
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
   - [設定：`Dockable`](#設定dockable)
+  - [設定：`Key`](#設定key)
   - [設定：`Split`](#設定split)
 
 ## 基本構造
@@ -92,6 +93,14 @@ xml
 ``` xml
 <Dockable><!-- key要素 --></Dockable>
 ```
+
+###### 設定：`Key`
+
+ペインの種類を設定する。ペインには、コメント（`COMMENTS`）、辞書（`DICTIONARY`）、編集（`EDITOR`）、用語集（`GLOSSARY`）、機械翻訳（`MACHINE_TRANSLATE`）、参考や区分（`MATCH`）、メモ帳（`NOTES`）、複数訳文（`MULTIPLE_TRANS`）、及び文節属性（`SEGMENTPROPERTIES`）が在る。
+
+``` xml
+<Key dockName=""/>
+``` 
 
 ###### 設定：`Split`
 
