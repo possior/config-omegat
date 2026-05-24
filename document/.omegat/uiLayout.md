@@ -25,6 +25,7 @@ xml
 <VLDocking version="2.1">
   <DockingDesktop name="">
     <DockingPanel x="0" y="0" width="1200" height="800">
+      <!-- パネルの設定 -->
     </DockingPanel>
     <TabGroups>
     </TabGroups>
@@ -69,6 +70,7 @@ xml
 <VLDocking version="2.1">
   <DockingDesktop name="">
     <DockingPanel x="0" y="0" width="1200" height="800">
+      <!-- Panel Settings -->
     </DockingPanel>
     <TabGroups>
     </TabGroups>
