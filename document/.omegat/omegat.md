@@ -23,6 +23,7 @@ xml
   - [設定：`tagValidateOnLeave`](#設定tagvalidateonleave)
   - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
   - [設定：`tagValidation_removePattern`](#設定tagValidation_removePattern)
+- [正規表現](#正規表現)
 
 ## 基本構造
 
@@ -79,6 +80,8 @@ xml
 <tagValidation_removePattern><!-- 正規表現 --></tagValidation_removePattern>
 ```
 
+## 正規表現
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository:
@@ -93,6 +96,7 @@ OmegaT's GitHub repository:
   - [Setting: `tagValidateOnLeave`](#setting-tagvalidateonleave)
   - [Setting: `tagValidation_customPattern`](#setting-tagvalidation_custompattern)
   - [Setting: `tagValidation_removePattern`](#setting-tagvalidation_removepattern)
+- [Regular Expression](#regular-expression)
 
 ## Basic Structure
 
@@ -148,3 +152,5 @@ Define a regular expression that identifies tags to remove from the translation.
 ``` xml
 <tagValidation_removePattern><!-- regular expression --></tagValidation_removePattern>
 ```
+
+## Regular Expression
