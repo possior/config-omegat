@@ -29,6 +29,7 @@ xml
   - [設定：`Dockable`](#設定dockable)
   - [設定：`Key`](#設定key)
   - [設定：`Split`](#設定split)
+  - [設定：`RelativePosition`](#設定relativeposition)
 
 ## 基本構造
 
@@ -102,6 +103,8 @@ xml
 <Key dockName=""/>
 ``` 
 
+###### 設定：`RelativePosition`
+
 ###### 設定：`Split`
 
 パネルを分割する。水平方向に分割する場合は`orientation`を`0`に、垂直方向に分割する場合は`orientation`を`1`に設定する。又、分割する相対位置を`0`から`1`の尺度で`location`に指定する。
@@ -124,6 +127,7 @@ OmegaT's GitHub repository:
   - [Setting: `Dockable`](#setting-dockable)
   - [Setting: `Key`](#setting-key)
   - [Setting: `Split`](#setting-split)
+  - [Setting: `RelativePosition`](#setting-relativeposition)
 
 ## Basic Structure
 
@@ -203,3 +207,5 @@ Split the panel. If you would like to split it horizontally, set `orientation` t
 ``` xml
 <Split orientation="" location=""><!-- pane settings --></Split>
 ```
+
+###### Setting: `RelativePosition`
