@@ -52,6 +52,12 @@ xml
 
 ###### 設定：`tagValidation_customPattern`
 
+翻訳結果に反映すべきタグを識別する正規表現を定義する。
+
+``` xml
+<tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
+```
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository:
@@ -97,3 +103,9 @@ Start and end the `preference` element that contains OmegaT preferences version 
 ## Various Preferences
 
 ###### Setting: `tagValidation_customPattern`
+
+Define a regular expression that identifies valid tags to be preserved in the translation result.
+
+``` xml
+<tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
+```
