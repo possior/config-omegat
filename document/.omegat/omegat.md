@@ -17,7 +17,7 @@ xml
 
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
-  - [設定：`tagValidation_customPattern`](#設定；tagValidation_customPattern)
+  - [設定：`tagValidation_customPattern`](#設定tagValidation_customPattern)
 
 ## 基本構造
 
