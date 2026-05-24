@@ -17,8 +17,8 @@ xml
 
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
-  - [設定：`tagValidation_customPattern`](#設定tagValidation_customPattern)
-  - [設定：`tagValidateOnLeave`](#設定tagValidateOnLeave)
+  - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
+  - [設定：`tagValidateOnLeave`](#設定tagvalidateonleave)
 
 ## 基本構造
 
@@ -78,8 +78,8 @@ OmegaT's GitHub repository:
 
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
-  - [Setting: `tagValidation_customPattern`](#setting-tagValidation_customPattern)
-  - [Setting: `tagValidateOnLeave`](#setting-tagValidateOnLeave)
+  - [Setting: `tagValidation_customPattern`](#setting-tagvalidation_custompattern)
+  - [Setting: `tagValidateOnLeave`](#setting-tagvalidateonleave)
 
 ## Basic Structure
 
