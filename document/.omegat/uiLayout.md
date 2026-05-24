@@ -51,6 +51,12 @@ xml
 <DockingDesktop name=""><!-- ウィンドウの定義 --></DockingDesktop>
 ```
 
+`DockingPanel`要素を開始・終了する。パネルを縦`800`ピクセルで横`1200`ピクセルにして、左上の角の`x`座標を`0`に`y`座標を`0`に設定する。パネルに関する設定を格納する。
+
+``` xml
+<DockingPanel x="0" y="0" width="1200" height="800"><!-- パネルの設定 -->DockingPanel>
+```
+
 ## 各種設定
 
 # OmegaT Configuration
@@ -94,6 +100,12 @@ Start and end the unnamed `DockingDesktop` element. This should define the windo
 
 ``` xml
 <DockingDesktop name=""><!-- window settings --></DockingDesktop>
+```
+
+Start and end the `DockingPanel` element. Set the panel width to `1200` and height to `800`, and set the top-left corner at the coordinate `x` is `0` and `y` is `0`. It stores panel-related settings.
+
+``` xml
+<DockingPanel x="0" y="0" width="1200" height="800"><!-- panel settings -->DockingPanel>
 ```
 
 ## Various Settings
