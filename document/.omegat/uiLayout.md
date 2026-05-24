@@ -200,6 +200,8 @@ Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIO
 <Key dockName=""/>
 ``` 
 
+###### Setting: `RelativePosition`
+
 ###### Setting: `Split`
 
 Split the panel. If you would like to split it horizontally, set `orientation` to `0`, and if vertically, to `1`. Also, set a relative location to split in a scale from `0` to `1`.
@@ -207,5 +209,3 @@ Split the panel. If you would like to split it horizontally, set `orientation` t
 ``` xml
 <Split orientation="" location=""><!-- pane settings --></Split>
 ```
-
-###### Setting: `RelativePosition`
