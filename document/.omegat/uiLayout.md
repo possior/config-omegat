@@ -61,8 +61,6 @@ xml
 
 ## Basic Structure
 
-## Various Settings
-
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
@@ -89,3 +87,5 @@ Start and end the unnamed `DockingDesktop` element. Inside, define display setti
 ``` xml
 <DockingDesktop name=""><!-- pane display settings --></DockingDesktop>
 ```
+
+## Various Settings
