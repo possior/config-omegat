@@ -69,6 +69,8 @@ xml
 
 # OmegaT Configuration
 
+OmegaT's GitHub repository:
+
 - [omegat-org/omegat](https://github.com/omegat-org/omegat/)
 - [omegat-org/omegat/test-acceptance/data/config/uiLayout.xml](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/uiLayout.xml)
 
