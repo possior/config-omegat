@@ -4,6 +4,8 @@
 xml
 └── VLDocking
     └── DockingDesktop
+        ├── DockingPanel
+        └── TabGroups
 ```
 
 # オメガティー設定
