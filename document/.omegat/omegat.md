@@ -17,8 +17,8 @@ xml
 
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
-  - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
   - [設定：`tagValidateOnLeave`](#設定tagvalidateonleave)
+  - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
 
 ## 基本構造
 
@@ -51,20 +51,20 @@ xml
 
 ## 各種設定
 
-###### 設定：`tagValidation_customPattern`
-
-翻訳結果に反映すべきタグを識別する正規表現を定義する。
-
-``` xml
-<tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
-```
-
 ###### 設定：`tagValidateOnLeave`
 
 分節を移動する際に、タグが不一致である場合はエラーを表示する。
 
 ``` xml
 <tagValidateOnLeave><!-- 真理値 --></tagValidateOnLeave>
+```
+
+###### 設定：`tagValidation_customPattern`
+
+翻訳結果に反映すべきタグを識別する正規表現を定義する。
+
+``` xml
+<tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
 ```
 
 # OmegaT Configuration
@@ -78,8 +78,8 @@ OmegaT's GitHub repository:
 
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
-  - [Setting: `tagValidation_customPattern`](#setting-tagvalidation_custompattern)
   - [Setting: `tagValidateOnLeave`](#setting-tagvalidateonleave)
+  - [Setting: `tagValidation_customPattern`](#setting-tagvalidation_custompattern)
 
 ## Basic Structure
 
@@ -112,18 +112,18 @@ Start and end the `preference` element that contains OmegaT preferences version 
 
 ## Various Preferences
 
-###### Setting: `tagValidation_customPattern`
-
-Define a regular expression that identifies valid tags to be preserved in the translation result.
-
-``` xml
-<tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
-```
-
 ###### Setting: `tagValidateOnLeave`
 
 Err that a tag does not match when moving to another segment.
 
 ``` xml
 <tagValidateOnLeave><!-- Boolean value --></tagValidateOnLeave>
+```
+
+###### Setting: `tagValidation_customPattern`
+
+Define a regular expression that identifies valid tags to be preserved in the translation result.
+
+``` xml
+<tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
 ```
