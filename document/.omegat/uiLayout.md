@@ -162,7 +162,7 @@ XML declaration: declare to use the `xml` format version `1.0` encoded in `UTF-8
 The `VLDocking` element version `2.1`. `VLDocking` is a framework used in `java` applications.
 
 ``` xml
-<VLDocking version="2.1"><!-- omegat configuration --></VLDocking>
+<VLDocking version="2.1"><!-- omegat settings --></VLDocking>
 ```
 
 The unnamed `DockingDesktop` element. This defines the OmegaT window settings (require validation).
