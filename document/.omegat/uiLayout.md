@@ -26,10 +26,10 @@ VLDocking
 
 - [基本構造](#基本構造)
 - [各種設定](#各種設定)
-  - [設定：`Dockable`](#設定dockable)
-  - [設定：`Key`](#設定key)
-  - [設定：`Split`](#設定split)
-  - [設定：`RelativePosition`](#設定relativeposition)
+  - [境界](#境界)
+  - [相対位置](#相対位置)
+  - [ペイン](#ペイン)
+  - [ペイン名](#ペイン名)
 
 ## 基本構造
 
@@ -87,23 +87,15 @@ VLDocking
 
 ## 各種設定
 
-###### 設定：`Dockable`
+###### 境界
 
-ペインを作成する。ペインの種類は`Key`要素で指定する。
+パネルを分割する。水平方向に分割する場合は`orientation`を`0`に、垂直方向に分割する場合は`orientation`を`1`に設定する。又、分割する相対位置を`0`から`1`の尺度で`location`に指定する。
 
 ``` xml
-<Dockable><!-- key要素 --></Dockable>
+<Split orientation="" location=""><!-- ペインの設定 --></Split>
 ```
 
-###### 設定：`Key`
-
-ペインの種類を設定する。ペインには、コメント（`COMMENTS`）、辞書（`DICTIONARY`）、編集（`EDITOR`）、用語集（`GLOSSARY`）、機械翻訳（`MACHINE_TRANSLATE`）、参考訳文（`MATCH`）、メモ帳（`NOTES`）、複数訳文（`MULTIPLE_TRANS`）、及び文節属性（`SEGMENTPROPERTIES`）が在る。
-
-``` xml
-<Key dockName=""/>
-``` 
-
-###### 設定：`RelativePosition`
+###### 相対位置
 
 下部のバーのタブの相対位置を設定する。
 
@@ -111,13 +103,21 @@ VLDocking
 <RelativePosition x="" y="" w="" h=""/>
 ```
 
-###### 設定：`Split`
+###### ペイン
 
-パネルを分割する。水平方向に分割する場合は`orientation`を`0`に、垂直方向に分割する場合は`orientation`を`1`に設定する。又、分割する相対位置を`0`から`1`の尺度で`location`に指定する。
+ペインを作成する。ペインの種類は`Key`要素で指定する。
 
 ``` xml
-<Split orientation="" location=""><!-- ペインの設定 --></Split>
+<Dockable><!-- key要素 --></Dockable>
 ```
+
+###### ペイン名
+
+ペインの種類を設定する。ペインには、コメント（`COMMENTS`）、辞書（`DICTIONARY`）、編集（`EDITOR`）、用語集（`GLOSSARY`）、機械翻訳（`MACHINE_TRANSLATE`）、参考訳文（`MATCH`）、メモ帳（`NOTES`）、複数訳文（`MULTIPLE_TRANS`）、及び文節属性（`SEGMENTPROPERTIES`）が在る。
+
+``` xml
+<Key dockName=""/>
+``` 
 
 # OmegaT Configuration
 
@@ -130,10 +130,10 @@ OmegaT's GitHub repository (external repository):
 
 - [Basic Structure](#basic-structure)
 - [Various Settings](#various-settings)
-  - [Setting: `Dockable`](#setting-dockable)
-  - [Setting: `Key`](#setting-key)
-  - [Setting: `Split`](#setting-split)
-  - [Setting: `RelativePosition`](#setting-relativeposition)
+  - [Pane](#pane)
+  - [Pane Name](#pane-name)
+  - [Border](#border)
+  - [Relative Position](#relative-position)
 
 ## Basic Structure
 
@@ -190,7 +190,15 @@ The `TabGroups` element. It is uncertain why this element exists here.
 
 ## Various Settings
 
-###### Setting: `Dockable`
+###### Border
+
+Split the panel. If you would like to split it horizontally, set `orientation` to `0`, and if vertically, to `1`. Also, set a relative location to split in a scale from `0` to `1`.
+
+``` xml
+<Split orientation="" location=""><!-- pane settings --></Split>
+```
+
+###### Pane
 
 Create a pane. Define the type by the `Key` element.
 
@@ -198,7 +206,7 @@ Create a pane. Define the type by the `Key` element.
 <Dockable><!-- key --></Dockable>
 ```
 
-###### Setting: `Key`
+###### Pane Name
 
 Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIONARIES`), editor (`EDITOR`), glossaries (`GLOSSARIES`), machine translations (`MACHINE_TRANSLATE`), fuzzy matches (`MATCH`), notepad (`NOTES`), multiple translations (`MULTIPLE_TRANS`), segment properties (`SEGMENTPROPERTIES`) panes.
 
@@ -206,18 +214,10 @@ Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIO
 <Key dockName=""/>
 ``` 
 
-###### Setting: `RelativePosition`
+###### Relative Position
 
 Set the relative position of a tab in the bar at the bottom.
 
 ``` xml
 <RelativePosition x="" y="" w="" h=""/>
-```
-
-###### Setting: `Split`
-
-Split the panel. If you would like to split it horizontally, set `orientation` to `0`, and if vertically, to `1`. Also, set a relative location to split in a scale from `0` to `1`.
-
-``` xml
-<Split orientation="" location=""><!-- pane settings --></Split>
 ```
