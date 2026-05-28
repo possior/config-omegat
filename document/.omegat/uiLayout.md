@@ -2,17 +2,17 @@
 
 ``` text
 xml
-└── VLDocking
-    └── DockingDesktop
-        ├── DockingPanel
-        │   └── Split
-        │       └── Dockable
-        │           └── Key
-        ├── Border
-        │   └── Dockable
-        │       ├── Key
-        │       └── RelativePosition
-        └── TabGroups
+VLDocking
+└── DockingDesktop
+    ├── DockingPanel
+    │   └── Split
+    │       └── Dockable
+    │           └── Key
+    ├── Border
+    │   └── Dockable
+    │       ├── Key
+    │       └── RelativePosition
+    └── TabGroups
 ```
 
 # オメガティー設定
