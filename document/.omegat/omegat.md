@@ -21,7 +21,6 @@ omegat
 - [基本構造](#基本構造)
 - [環境設定](#環境設定)
   - [設定：`tagValidateOnLeave`](#設定tagvalidateonleave)
-  - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
   - [設定：`tagValidation_removePattern`](#設定tagValidation_removePattern)
   - [タグ処理](#タグ処理)
     - [カスタムタグ](#カスタムタグ)
@@ -67,7 +66,9 @@ omegat
 <tagValidateOnLeave><!-- 真理値 --></tagValidateOnLeave>
 ```
 
-###### 設定：`tagValidation_customPattern`
+### タグ処理
+
+###### カスタムタグ
 
 翻訳結果に反映すべきタグを識別する正規表現を定義する。
 
@@ -75,19 +76,13 @@ omegat
 <tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
 ```
 
-###### 設定：`tagValidation_removePattern`
+###### フラグの設定されたテキスト
 
 翻訳対象から自動で削除するタグを識別する正規表現を定義する。
 
 ``` xml
 <tagValidation_removePattern><!-- 正規表現 --></tagValidation_removePattern>
 ```
-
-### タグ処理
-
-###### カスタムタグ
-
-###### フラグの設定されたテキスト
 
 ## 正規表現
 
@@ -162,7 +157,9 @@ Err that a tag does not match when moving to another segment.
 <tagValidateOnLeave><!-- Boolean value --></tagValidateOnLeave>
 ```
 
-###### Setting: `tagValidation_customPattern`
+### Tag Processing
+
+###### Custom Tags
 
 Define a regular expression that identifies valid tags to be preserved in the translation result.
 
@@ -170,19 +167,13 @@ Define a regular expression that identifies valid tags to be preserved in the tr
 <tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
 ```
 
-###### Setting: `tagValidation_removePattern`
+###### Flagged Text
 
 Define a regular expression that identifies tags to remove from the translation.
 
 ``` xml
 <tagValidation_removePattern><!-- regular expression --></tagValidation_removePattern>
 ```
-
-### Tag Processing
-
-###### Custom Tags
-
-###### Flagged Text
 
 ## Regular Expression
 
