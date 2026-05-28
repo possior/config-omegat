@@ -25,7 +25,7 @@ bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/
 
 ## 公開版一覧
 
-別ファイル（[`version.md`](./version.md)）を参照せよ。
+[`version.md`](./version.md)を参照せよ。
 
 # OmegaT Configuration
 
@@ -52,4 +52,4 @@ To change the implementation method, add options listed below to this command.
 
 ## List of Versions
 
-Reference another file ([`version.md`](./version.md)).
+Reference [`version.md`](./version.md).
