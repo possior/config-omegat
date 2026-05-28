@@ -3,7 +3,7 @@
   <DockingDesktop name="">
     <DockingPanel x="0" y="0" width="1200" height="800">
       <Split orientation="1" location="0.7">
-        <Split orientation="0" location="0.8">
+        <Split orientation="0" location="0.7">
           <Dockable>
             <Key dockName="EDITOR"/>
           </Dockable>
