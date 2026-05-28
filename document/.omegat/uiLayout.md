@@ -64,7 +64,7 @@ VLDocking
 無名の`DockingDesktop`要素。オメガティーのウィンドウ全体の設定（要検証）。
 
 ``` xml
-<DockingDesktop name=""><!-- ウィンドウの定義 --></DockingDesktop>
+<DockingDesktop name=""><!-- ウィンドウの設定 --></DockingDesktop>
 ```
 
 左上の角はＸ座標が`x`でＹ座標が`y`の点で、横が`width`ピクセルで縦が`height`ピクセルのパネルを作成する、`DockingPanel`要素。
