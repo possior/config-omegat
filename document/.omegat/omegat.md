@@ -101,6 +101,8 @@ omegat
 
 ###### フラグの設定されたテキストの正規表現
 
+フラグの設定されたテキストには現在、正規表現を設定して居ない。
+
 # OmegaT Configuration
 
 OmegaT's GitHub repository (external repository):
@@ -192,3 +194,5 @@ Custom tags currently use the following regular expressions.
 The first tag type is `\u005b\d+(?:[\u002c\u002d\u2013\u2014]\d+)*\u005d`, which recognizes citations. The first character is `[` of Unicode `U+005B` (`\u005b`). Next, digits (`\d`) repeat one or more times (`+`). Then a group (`(?:[\u002c\u002d\u2013\u2014]\d+)`) repeats zero or more times (`*`). Finally, it ends with `]` of Unicode `U+005D` (`\u005d`). We will see the group (`(?:[\u002c\u002d\u2013\u2014]\d+)`) more in detail. It begins with either `,` of Unicode `U+002C` (`\u002c`), `-` of `U+002D` (`\u002d`), `–` of `U+2013` (`\u2013`), or `—` of `U+2014` (`\u2014`), followed by digits (`\d`) repeating one or more times (`+`). For example, it can recognize `[1]`, `[3,4,9]`, and `[10–14]` as tags.
 
 ###### Flagged Text Regular Expressions
+
+Flagged text currently does not use regular expressions.
