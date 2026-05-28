@@ -105,15 +105,15 @@ VLDocking
 
 ###### ペイン
 
-ペインを作成する。ペインの種類は`Key`要素で指定する。
+ペインを作成する。ペインの名前は`Key`要素で指定する。
 
 ``` xml
-<Dockable><!-- key要素 --></Dockable>
+<Dockable><!-- ペインの設定--></Dockable>
 ```
 
 ###### ペイン名
 
-ペインの種類を設定する。ペインには、コメント（`COMMENTS`）、辞書（`DICTIONARY`）、編集（`EDITOR`）、用語集（`GLOSSARY`）、機械翻訳（`MACHINE_TRANSLATE`）、参考訳文（`MATCH`）、メモ帳（`NOTES`）、複数訳文（`MULTIPLE_TRANS`）、及び文節属性（`SEGMENTPROPERTIES`）が在る。
+ペインの名前を設定する。ペインには、コメント（`COMMENTS`）、辞書（`DICTIONARY`）、編集（`EDITOR`）、用語集（`GLOSSARY`）、機械翻訳（`MACHINE_TRANSLATE`）、参考訳文（`MATCH`）、メモ帳（`NOTES`）、複数訳文（`MULTIPLE_TRANS`）、及び文節属性（`SEGMENTPROPERTIES`）が在る。
 
 ``` xml
 <Key dockName=""/>
@@ -203,7 +203,7 @@ Split the panel. If you would like to split it horizontally, set `orientation` t
 Create a pane. Define the type by the `Key` element.
 
 ``` xml
-<Dockable><!-- key --></Dockable>
+<Dockable><!-- pane settings --></Dockable>
 ```
 
 ###### Pane Name
