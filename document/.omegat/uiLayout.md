@@ -61,7 +61,7 @@ VLDocking
 <VLDocking version="2.1"><!-- オメガティーの設定 --></VLDocking>
 ```
 
-無名の`DockingDesktop`要素を開始・終了する。ウィンドウ全体の設定と思われる。`name`属性が必要か要検討。
+無名の`DockingDesktop`要素。オメガティーのウィンドウ全体の設定（要検証）。
 
 ``` xml
 <DockingDesktop name=""><!-- ウィンドウの定義 --></DockingDesktop>
@@ -165,7 +165,7 @@ The `VLDocking` element version `2.1`. `VLDocking` is a framework used in `java`
 <VLDocking version="2.1"><!-- omegat configuration --></VLDocking>
 ```
 
-Start and end the unnamed `DockingDesktop` element. This should define the window settings. It is uncertain whether the `name` attribute is necessary.
+The unnamed `DockingDesktop` element. This defines the OmegaT window settings (require validation).
 
 ``` xml
 <DockingDesktop name=""><!-- window settings --></DockingDesktop>
