@@ -20,7 +20,6 @@ omegat
 
 - [基本構造](#基本構造)
 - [環境設定](#環境設定)
-  - [設定：`tagValidateOnLeave`](#設定tagvalidateonleave)
   - [タグ処理](#タグ処理)
     - [カスタムタグ](#カスタムタグ)
     - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
@@ -56,14 +55,6 @@ omegat
 ```
 
 ## 環境設定
-
-###### 設定：`tagValidateOnLeave`
-
-分節を移動する際に、タグが不一致である場合はエラーを表示する。
-
-``` xml
-<tagValidateOnLeave><!-- 真理値 --></tagValidateOnLeave>
-```
 
 ### タグ処理
 
@@ -108,7 +99,6 @@ OmegaT's GitHub repository (external repository):
 
 - [Basic Structure](#basic-structure)
 - [Preferences](#preferences)
-  - [Setting: `tagValidateOnLeave`](#setting-tagvalidateonleave)
   - [Tag Processing](#tag-processing)
     - [Custom Tags](#custom-tags)
     - [Flagged Text](#flagged-text)
@@ -145,14 +135,6 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 ```
 
 ## Preferences
-
-###### Setting: `tagValidateOnLeave`
-
-Err that a tag does not match when moving to another segment.
-
-``` xml
-<tagValidateOnLeave><!-- Boolean value --></tagValidateOnLeave>
-```
 
 ### Tag Processing
 
