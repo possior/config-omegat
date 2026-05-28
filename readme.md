@@ -6,18 +6,18 @@
 
 ## 目次
 
-- [実装方法](#実装方法)
+- [適用方法](#適用方法)
 - [公開版一覧](#公開版一覧)
 
-## 実装方法
+## 適用方法
 
-以下の命令文で最新版の設定を実装できる。
+以下の命令文で最新版の設定を適用できる。
 
 ``` bash
 bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh)
 ```
 
-実装方法を変更する場合は、此の命令文に続けて選択肢を付す事。
+適用方法を変更する場合は、此の命令文に続けて選択肢を付す事。
 
 - `-d` `--default`<br>【**危険**】各設定ファイルを実装するかプロンプトしない。既存の設定を上書きする可能性が有る。
 - `-o` `--os` `--operating-system` `--system`<br>実装先のＯＳを指定する。`arch`系統のＯＳが標準で選択されて居る。
@@ -33,12 +33,12 @@ OmegaT configuration files that I reuse.
 
 ## List of Contents
 
-- [How to Install](#how-to-install)
+- [How to Apply](#how-to-apply)
 - [List of Versions](#list-of-versions)
 
-## How to Install
+## How to Apply
 
-Install the latest configuration using the following command.
+Apply the latest configuration using the following command.
 
 ``` bash
 bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh)
