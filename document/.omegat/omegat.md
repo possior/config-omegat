@@ -19,7 +19,7 @@ omegat
 ## 目次
 
 - [基本構造](#基本構造)
-- [各種設定](#各種設定)
+- [環境設定](#環境設定)
   - [設定：`tagValidateOnLeave`](#設定tagvalidateonleave)
   - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
   - [設定：`tagValidation_removePattern`](#設定tagValidation_removePattern)
@@ -31,7 +31,7 @@ omegat
 <?xml version="1.0" encoding="UTF-8"?>
 <omegat>
   <preference version="1.0">
-    <!-- オメガティーの設定 -->
+    <!-- オメガティーの環境設定 -->
   </preference>
 </omegat>
 ```
@@ -51,10 +51,10 @@ omegat
 オメガティーの設定を格納する第`1.0`版の`preference`要素を開始・終了する。
 
 ``` xml
-<preference version="1.0"><!-- オメガティーの設定 --></preference>
+<preference version="1.0"><!-- オメガティーの環境設定 --></preference>
 ```
 
-## 各種設定
+## 環境設定
 
 ###### 設定：`tagValidateOnLeave`
 
@@ -104,7 +104,7 @@ OmegaT's GitHub repository (external repository):
 ## Table of Contents
 
 - [Basic Structure](#basic-structure)
-- [Various Settings](#various-settings)
+- [Preferences](#preferences)
   - [Setting: `tagValidateOnLeave`](#setting-tagvalidateonleave)
   - [Setting: `tagValidation_customPattern`](#setting-tagvalidation_custompattern)
   - [Setting: `tagValidation_removePattern`](#setting-tagvalidation_removepattern)
@@ -117,7 +117,7 @@ OmegaT's GitHub repository (external repository):
 <?xml version="1.0" encoding="UTF-8"?>
 <omegat>
   <preference version="1.0">
-    <!-- OmegaT preferences -->
+    <!-- omegat preferences -->
   </preference>
 </omegat>
 ```
@@ -131,16 +131,16 @@ XML declaration - declare that the file uses `xml` version `1.0` encoded in `UTF
 Start and end the `omegat` element that contains OmegaT configuration.
 
 ``` xml
-<omegat><!-- OmegaT configuration --></omegat>
+<omegat><!-- omegat settings --></omegat>
 ```
 
 Start and end the `preference` element that contains OmegaT preferences version `1.0`.
 
 ``` xml
-<preference version="1.0"><!-- OmegaT preferences --></preference>
+<preference version="1.0"><!-- omegat preferences --></preference>
 ```
 
-## Various Preferences
+## Preferences
 
 ###### Setting: `tagValidateOnLeave`
 
