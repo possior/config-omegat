@@ -24,6 +24,8 @@ omegat
   - [設定：`tagValidation_customPattern`](#設定tagvalidation_custompattern)
   - [設定：`tagValidation_removePattern`](#設定tagValidation_removePattern)
   - [タグ処理](#タグ処理)
+    - [カスタムタグ](#カスタムタグ)
+    - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
 - [正規表現](#正規表現)
 
 ## 基本構造
@@ -83,6 +85,10 @@ omegat
 
 ### タグ処理
 
+###### カスタムタグ
+
+###### フラグの設定されたテキスト
+
 ## 正規表現
 
 文字列をパターン認識する為に使用される表現様式を**正規表現**と言う。拡張された表現も存在するが、オメガティーは一般的な正規表現を用いて、タグ等を認識して居る。
@@ -112,6 +118,8 @@ OmegaT's GitHub repository (external repository):
   - [Setting: `tagValidation_customPattern`](#setting-tagvalidation_custompattern)
   - [Setting: `tagValidation_removePattern`](#setting-tagvalidation_removepattern)
   - [Tag Processing](#tag-processing)
+    - [Custom Tags](#custom-tags)
+    - [Flagged Text](#flagged-text)
 - [Regular Expression](#regular-expression)
   - [Regex: `tagValidation_customPattern`](#regex-tagvalidation_custompattern)
 
@@ -171,6 +179,10 @@ Define a regular expression that identifies tags to remove from the translation.
 ```
 
 ### Tag Processing
+
+###### Custom Tags
+
+###### Flagged Text
 
 ## Regular Expression
 
