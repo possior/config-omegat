@@ -1,4 +1,4 @@
-[日本語](#オメガティー設定)｜[English](#omegat-configuration)｜[`omegat.prefs`](../../source/.omegat/omegat.xml)
+[日本語](#オメガティーの環境設定)｜[English](#omegat-preferences)｜[`omegat.prefs`](../../source/.omegat/omegat.xml)
 
 ``` text
 xml
@@ -9,7 +9,7 @@ omegat
     └── tagValidation_removePattern
 ```
 
-# オメガティー設定
+# オメガティーの環境設定
 
 オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
 
@@ -103,7 +103,7 @@ omegat
 
 フラグの設定されたテキストには現在、正規表現を設定して居ない。
 
-# OmegaT Configuration
+# OmegaT Preferences
 
 OmegaT's GitHub repository (external repository):
 
