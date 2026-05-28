@@ -145,6 +145,8 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 
 ## Preferences
 
+"Options" > "Preferences" (Shortcut Key: `ALT + O`, `P`).
+
 ### Tag Processing
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
