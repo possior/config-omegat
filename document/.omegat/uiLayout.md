@@ -1,4 +1,4 @@
-[日本語](#オメガティー設定)｜[English](#omegat-configuration)｜[`uiLayout.xml`](../../source/.omegat/uiLayout.xml)
+[日本語](#オメガティーのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../../source/.omegat/uiLayout.xml)
 
 ``` text
 xml
@@ -15,7 +15,7 @@ VLDocking
     └── TabGroups
 ```
 
-# オメガティー設定
+# オメガティーのレイアウト
 
 オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
 
@@ -119,7 +119,7 @@ VLDocking
 <Key dockName=""/>
 ``` 
 
-# OmegaT Configuration
+# OmegaT Layout
 
 OmegaT's GitHub repository (external repository):
 
