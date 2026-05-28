@@ -7,6 +7,7 @@
 ## 目次
 
 - [適用方法](#適用方法)
+- [説明書](#説明書)
 - [公開版一覧](#公開版一覧)
 
 ## 適用方法
@@ -23,6 +24,8 @@ bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/
 - `-o` `--os` `--operating-system` `--system`<br>実装先のＯＳを指定する。`arch`系統のＯＳが標準で選択されて居る。
 - `-v` `--ver` `--version`<br>実装する版号を指定する。[ブランチ](https://github.com/possior/config-omegat/branches/)でも[タグ](https://github.com/possior/config-omegat/tags/)でも指定できる。
 
+## 説明書
+
 ## 公開版一覧
 
 [`version.md`](./version.md)を参照せよ。
@@ -34,6 +37,7 @@ OmegaT configuration files that I reuse.
 ## List of Contents
 
 - [How to Apply](#how-to-apply)
+- [Manuals](#manuals)
 - [List of Versions](#list-of-versions)
 
 ## How to Apply
@@ -49,6 +53,8 @@ To change the implementation method, add options listed below to this command.
 - `-d` `--default`<br>[**WARNING**] install each configuration file without prompting your decision. This may override the existing configuration.
 - `-o` `--os` `--operating-system` `--system`<br>Specify the OS to install on. The default OS is Arch-based.
 - `-v` `--ver` `--version`<br>Specify the version number to install. You can specify either a [branch](https://github.com/possior/config-omegat/branches/) or [tag](https://github.com/possior/config-omegat/tags/).
+
+## Manuals
 
 ## List of Versions
 
