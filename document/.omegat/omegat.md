@@ -24,6 +24,7 @@ omegat
     - [カスタムタグ](#カスタムタグ)
     - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
 - [正規表現](#正規表現)
+    - [フラグの設定されたテキストの正規表現](#フラグの設定されたテキストの正規表現)
 
 ## 基本構造
 
@@ -82,7 +83,7 @@ omegat
 
 文字列をパターン認識する為に使用される表現様式を[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)と言う。拡張された表現も存在するが、オメガティーは一般的な正規表現を用いて、タグ等を認識して居る。
 
-###### 正規表現：`tagValidation_customPattern`
+###### フラグの設定されたテキストの正規表現
 
 `tagValidation_customPattern`設定には現在以下の正規表現を使用して居る。
 
@@ -107,7 +108,7 @@ OmegaT's GitHub repository (external repository):
     - [Custom Tags](#custom-tags)
     - [Flagged Text](#flagged-text)
 - [Regular Expression](#regular-expression)
-  - [Regex: `tagValidation_customPattern`](#regex-tagvalidation_custompattern)
+  - [Flagged Text Regular Expressions](#flagged-text-tegular-expressions)
 
 ## Basic Structure
 
@@ -164,7 +165,7 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 [Regular expressions (regex) (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) are formatted expressions used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
 
-###### Regex：`tagValidation_customPattern`
+###### Flagged Text Regular Expressions
 
 The setting `tagValidation_customPattern` currently uses the following regular expression.
 
