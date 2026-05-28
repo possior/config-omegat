@@ -68,6 +68,10 @@ omegat
 
 ###### タグに課題がある訳文ファイルの作成をブロックする
 
+``` xml
+<tags_valid_required><!-- trueあるいはfalse --></tags_valid_required>
+``` 
+
 ###### カスタムタグ
 
 翻訳結果に反映すべきタグを識別する[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)を定義する。
@@ -164,6 +168,10 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
 ###### Block the Creation of Translated Files with Tag Issues
+
+``` xml
+<tags_valid_required><!-- true or false --></tags_valid_required>
+``` 
 
 ###### Custom Tags
 
