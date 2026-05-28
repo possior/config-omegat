@@ -37,7 +37,7 @@ VLDocking
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
   <DockingDesktop name="">
-    <DockingPanel x="0" y="0" width="1200" height="800">
+    <DockingPanel x="" y="" width="" height="">
       <!-- パネルの設定 -->
     </DockingPanel>
     <Border zone="2">
@@ -70,7 +70,7 @@ VLDocking
 `DockingPanel`要素を開始・終了する。パネルを縦`800`ピクセルで横`1200`ピクセルにして、左上の角の`x`座標を`0`に`y`座標を`0`に設定する。パネルに関する設定を格納する。
 
 ``` xml
-<DockingPanel x="0" y="0" width="1200" height="800"><!-- パネルの設定 -->DockingPanel>
+<DockingPanel x="" y="" width="" height=""><!-- パネルの設定 --></DockingPanel>
 ```
 
 `Border`要素を開始・終了する。パネル下部のタブに関する設定を格納する。`zone`属性が何を意味するか不明。
@@ -141,7 +141,7 @@ OmegaT's GitHub repository (external repository):
 <?xml version="1.0" encoding="UTF-8"?>
 <VLDocking version="2.1">
   <DockingDesktop name="">
-    <DockingPanel x="0" y="0" width="1200" height="800">
+    <DockingPanel x="" y="" width="" height="">
       <!-- panel settings -->
     </DockingPanel>
     <Border zone="2">
@@ -174,7 +174,7 @@ The unnamed `DockingDesktop` element. This defines the OmegaT window settings (r
 Start and end the `DockingPanel` element. Set the panel width to `1200` and height to `800`, and set the top-left corner at the coordinate `x` is `0` and `y` is `0`. It stores panel-related settings.
 
 ``` xml
-<DockingPanel x="0" y="0" width="1200" height="800"><!-- panel settings -->DockingPanel>
+<DockingPanel x="" y="" width="" height=""><!-- panel settings --></DockingPanel>
 ```
 
 Start and end the `Border` element. It stores settings related to tabs at the bottom of the panel. It is uncertain what the `zone` attribute mean.
