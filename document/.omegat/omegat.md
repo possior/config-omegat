@@ -25,6 +25,7 @@ omegat
     - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
 - [正規表現](#正規表現)
   - [タグ処理の正規表現](#タグ処理の正規表現)
+    - [訳文におけるタグ順序の入れ替えを許可する](#訳文におけるタグ順序の入れ替えを許可する)
     - [タグに課題がある訳文ファイルの作成をブロックする](#タグに課題がある訳文ファイルの作成をブロックする)
     - [カスタムタグの正規表現](#カスタムタグの正規表現)
     - [フラグの設定されたテキストの正規表現](#フラグの設定されたテキストの正規表現)
@@ -65,6 +66,8 @@ omegat
 ### タグ処理
 
 翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
+
+###### 訳文におけるタグ順序の入れ替えを許可する
 
 ###### タグに課題がある訳文ファイルの作成をブロックする
 
@@ -126,6 +129,7 @@ OmegaT's GitHub repository (external repository):
     - [Flagged Text](#flagged-text)
 - [Regular Expression](#regular-expression)
   - [Tag Processing Regular Expressions](#tag-processing-regular-expressions)
+    - [Allow Translated Tags to Be in a Different Order](#allow-translated-tags-to-be-in-a-different-order)
     - [Block the Creation of Translated Files with Tag Issues](#block-the-creation-of-translated files-with-tag-issues)
     - [Custom Tags Regular Expressions](#custom-tags-regular-expressions)
     - [Flagged Text Regular Expressions](#flagged-text-tegular-expressions)
@@ -166,6 +170,8 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 ### Tag Processing
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
+
+###### Allow Translated Tags to Be in a Different Order
 
 ###### Block the Creation of Translated Files with Tag Issues
 
