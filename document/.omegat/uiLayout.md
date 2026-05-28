@@ -55,7 +55,7 @@ VLDocking
 <?xml version="1.0" encoding="UTF-8"?>
 ``` 
 
-第`2.1`版の`VLDocking`要素を開始・終了する。`VLDocking`は`java`製品で用いられるフレームワークだ。
+第`2.1`版の`VLDocking`要素。`VLDocking`は`java`製品で用いられるフレームワークだ。
 
 ``` xml
 <VLDocking version="2.1"><!-- オメガティーの設定 --></VLDocking>
@@ -159,7 +159,7 @@ XML declaration: declare to use the `xml` format version `1.0` encoded in `UTF-8
 <?xml version="1.0" encoding="UTF-8"?>
 ``` 
 
-Start and end the `VLDocking` element version `2.1`. `VLDocking` is a framework used in `java` applications.
+The `VLDocking` element version `2.1`. `VLDocking` is a framework used in `java` applications.
 
 ``` xml
 <VLDocking version="2.1"><!-- omegat configuration --></VLDocking>
