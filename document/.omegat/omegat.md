@@ -56,7 +56,11 @@ omegat
 
 ## 環境設定
 
+「設定」＞「環境設定」（ショートカット：`ALT + O`, `P`）。
+
 ### タグ処理
+
+翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
 
 ###### カスタムタグ
 
@@ -137,6 +141,8 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 ## Preferences
 
 ### Tag Processing
+
+[Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
 ###### Custom Tags
 
