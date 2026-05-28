@@ -69,6 +69,10 @@ omegat
 
 ###### 訳文におけるタグ順序の入れ替えを許可する
 
+``` xml
+<loose_tag_ordering><!-- trueあるいはfalse --></loose_tag_ordering>
+```
+
 ###### タグに課題がある訳文ファイルの作成をブロックする
 
 ``` xml
@@ -172,6 +176,10 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
 ###### Allow Translated Tags to Be in a Different Order
+
+``` xml
+<loose_tag_ordering><!-- true or false --></loose_tag_ordering>
+```
 
 ###### Block the Creation of Translated Files with Tag Issues
 
