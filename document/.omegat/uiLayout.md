@@ -67,7 +67,7 @@ VLDocking
 <DockingDesktop name=""><!-- ウィンドウの定義 --></DockingDesktop>
 ```
 
-`DockingPanel`要素を開始・終了する。パネルを縦`800`ピクセルで横`1200`ピクセルにして、左上の角の`x`座標を`0`に`y`座標を`0`に設定する。パネルに関する設定を格納する。
+左上の角はＸ座標が`x`でＹ座標が`y`の点で、横が`width`ピクセルで縦が`height`ピクセルのパネルを作成する、`DockingPanel`要素。
 
 ``` xml
 <DockingPanel x="" y="" width="" height=""><!-- パネルの設定 --></DockingPanel>
@@ -171,7 +171,7 @@ The unnamed `DockingDesktop` element. This defines the OmegaT window settings (r
 <DockingDesktop name=""><!-- window settings --></DockingDesktop>
 ```
 
-Start and end the `DockingPanel` element. Set the panel width to `1200` and height to `800`, and set the top-left corner at the coordinate `x` is `0` and `y` is `0`. It stores panel-related settings.
+The `DockingPanel` element that spawns a panel whose top-left corner's x coordinate is `x` and y is `y` and whose width is `width` and height is `height`.
 
 ``` xml
 <DockingPanel x="" y="" width="" height=""><!-- panel settings --></DockingPanel>
