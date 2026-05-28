@@ -73,13 +73,13 @@ VLDocking
 <DockingPanel x="" y="" width="" height=""><!-- パネルの設定 --></DockingPanel>
 ```
 
-`Border`要素を開始・終了する。パネル下部のタブに関する設定を格納する。`zone`属性が何を意味するか不明。
+パネル下部のタブに関する設定を格納する`Border`要素。
 
 ``` xml
 <Border zone="2"><!-- タブの設定 --></Border>
 ```
 
-`TabGroups`要素を開始・終了する。何を設定する要素か不明。
+`TabGroups`要素。何を設定する要素か不明である。
 
 ``` xml
 <TabGroups></TabGroups>
@@ -177,12 +177,12 @@ The `DockingPanel` element that spawns a panel whose top-left corner's x coordin
 <DockingPanel x="" y="" width="" height=""><!-- panel settings --></DockingPanel>
 ```
 
-Start and end the `Border` element. It stores settings related to tabs at the bottom of the panel. It is uncertain what the `zone` attribute mean.
+The `Border` element that stores settings related to tabs at the bottom of the panel.
 
 ``` xml
 <Border zone="2"><!-- tab settings --></Border>
 ```
-Start and end the `TabGroups` element. It is uncertain why this element exists here.
+The `TabGroups` element. It is uncertain why this element exists here.
 
 ``` xml
 <TabGroups></TabGroups>
