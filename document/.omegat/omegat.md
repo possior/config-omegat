@@ -42,13 +42,13 @@ omegat
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
-オメガティーの設定を格納する`omegat`要素を開始・終了する。
+オメガティーの設定を格納する`omegat`要素。
 
 ``` xml
 <omegat><!-- オメガティーの設定 --></omegat>
 ```
 
-オメガティーの設定を格納する第`1.0`版の`preference`要素を開始・終了する。
+オメガティーの環境設定を格納する第`1.0`版の`preference`要素。
 
 ``` xml
 <preference version="1.0"><!-- オメガティーの環境設定 --></preference>
@@ -128,13 +128,13 @@ XML declaration: declare to use the `xml` format version `1.0` encoded in `UTF-8
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
-Start and end the `omegat` element that contains OmegaT configuration.
+The `omegat` element that stores OmegaT settings.
 
 ``` xml
 <omegat><!-- omegat settings --></omegat>
 ```
 
-Start and end the `preference` element that contains OmegaT preferences version `1.0`.
+The `preference` element that stores OmegaT preferences version `1.0`.
 
 ``` xml
 <preference version="1.0"><!-- omegat preferences --></preference>
