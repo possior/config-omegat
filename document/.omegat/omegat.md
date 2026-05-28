@@ -25,6 +25,7 @@ omegat
     - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
 - [正規表現](#正規表現)
   - [タグ処理の正規表現](#タグ処理の正規表現)
+    - [カスタムタグの正規表現](#カスタムタグの正規表現)
     - [フラグの設定されたテキストの正規表現](#フラグの設定されたテキストの正規表現)
 
 ## 基本構造
@@ -88,7 +89,7 @@ omegat
 
 翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
 
-###### フラグの設定されたテキストの正規表現
+###### カスタムタグの正規表現
 
 `tagValidation_customPattern`設定には現在以下の正規表現を使用して居る。
 
@@ -97,6 +98,8 @@ omegat
 ```
 
 １種類目のタグは`\u005b\d+(?:[\u002c\u002d\u2013\u2014]\d+)*\u005d`であり、引用を認識する。最初の文字はユニコード`U+005B`（`\u005b`）の`[`である。次に数字（`\d`）が１回以上繰り返される（`+`）。グループ（`(?:[\u002c\u002d\u2013\u2014]\d+)`）が０回以上繰り返される（`*`）。最後はユニコード`U+005D`（`\u005d`）の文字`]`である。グループ（`(?:[\u002c\u002d\u2013\u2014]\d+)`）を詳細に見る。ユニコード`U+002C`（`\u002c`）の`,`か`U+002D`（`\u002d`）の`-`か`U+2013`（`\u2013`）の`–`か`U+2014`（`\u2014`）の`—`かで始まり、其後は数字（`\d`）が１回以上繰り返される（`+`）。例えば、`[1]`や`[3,4,9]`や`[10–14]`をタグとして認識できる。
+
+###### フラグの設定されたテキストの正規表現
 
 # OmegaT Configuration
 
@@ -114,6 +117,7 @@ OmegaT's GitHub repository (external repository):
     - [Flagged Text](#flagged-text)
 - [Regular Expression](#regular-expression)
   - [Tag Processing Regular Expressions](#tag-processing-regular-expressions)
+    - [Custom Tags Regular Expressions](#custom-tags-regular-expressions)
     - [Flagged Text Regular Expressions](#flagged-text-tegular-expressions)
 
 ## Basic Structure
@@ -177,7 +181,7 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
-###### Flagged Text Regular Expressions
+###### Custom Tags Regular Expressions
 
 The setting `tagValidation_customPattern` currently uses the following regular expression.
 
@@ -186,3 +190,5 @@ The setting `tagValidation_customPattern` currently uses the following regular e
 ```
 
 The first tag type is `\u005b\d+(?:[\u002c\u002d\u2013\u2014]\d+)*\u005d`, which recognizes citations. The first character is `[` of Unicode `U+005B` (`\u005b`). Next, digits (`\d`) repeat one or more times (`+`). Then a group (`(?:[\u002c\u002d\u2013\u2014]\d+)`) repeats zero or more times (`*`). Finally, it ends with `]` of Unicode `U+005D` (`\u005d`). We will see the group (`(?:[\u002c\u002d\u2013\u2014]\d+)`) more in detail. It begins with either `,` of Unicode `U+002C` (`\u002c`), `-` of `U+002D` (`\u002d`), `–` of `U+2013` (`\u2013`), or `—` of `U+2014` (`\u2014`), followed by digits (`\d`) repeating one or more times (`+`). For example, it can recognize `[1]`, `[3,4,9]`, and `[10–14]` as tags.
+
+###### Flagged Text Regular Expressions
