@@ -86,6 +86,8 @@ omegat
 
 ### タグ処理の正規表現
 
+翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
+
 ###### フラグの設定されたテキストの正規表現
 
 `tagValidation_customPattern`設定には現在以下の正規表現を使用して居る。
@@ -172,6 +174,8 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 [Regular expressions (regex) (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) are formatted expressions used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
 
 ### Tag Processing Regular Expressions
+
+[Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
 ###### Flagged Text Regular Expressions
 
