@@ -69,7 +69,7 @@ omegat
 
 ###### カスタムタグ
 
-翻訳結果に反映すべきタグを識別する正規表現を定義する。
+翻訳結果に反映すべきタグを識別する[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)を定義する。
 
 ``` xml
 <tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
@@ -77,7 +77,7 @@ omegat
 
 ###### フラグの設定されたテキスト
 
-翻訳対象から自動で削除するタグを識別する正規表現を定義する。
+翻訳対象から自動で削除するタグを識別する[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)を定義する。
 
 ``` xml
 <tagValidation_removePattern><!-- 正規表現 --></tagValidation_removePattern>
@@ -158,7 +158,7 @@ Err that a tag does not match when moving to another segment.
 
 ###### Custom Tags
 
-Define a regular expression that identifies valid tags to be preserved in the translation result.
+Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identifies valid tags to be preserved in the translation result.
 
 ``` xml
 <tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
@@ -166,7 +166,7 @@ Define a regular expression that identifies valid tags to be preserved in the tr
 
 ###### Flagged Text
 
-Define a regular expression that identifies tags to remove from the translation.
+Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identifies tags to remove from the translation.
 
 ``` xml
 <tagValidation_removePattern><!-- regular expression --></tagValidation_removePattern>
