@@ -26,6 +26,9 @@ bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/
 
 ## 説明書
 
+- [`omegat.prefs`](./document/.omegat/omegat.md)
+- [`uiLayout.xml`](./document/.omegat/uiLayout.md)
+
 ## 公開版一覧
 
 [`version.md`](./version.md)を参照せよ。
@@ -55,6 +58,9 @@ To change the implementation method, add options listed below to this command.
 - `-v` `--ver` `--version`<br>Specify the version number to install. You can specify either a [branch](https://github.com/possior/config-omegat/branches/) or [tag](https://github.com/possior/config-omegat/tags/).
 
 ## Manuals
+
+- [`omegat.prefs`](./document/.omegat/omegat.md)
+- [`uiLayout.xml`](./document/.omegat/uiLayout.md)
 
 ## List of Versions
 
