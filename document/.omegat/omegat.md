@@ -91,7 +91,7 @@ omegat
 
 ###### カスタムタグの正規表現
 
-`tagValidation_customPattern`設定には現在以下の正規表現を使用して居る。
+カスタムタグには現在、以下の正規表現を使用して居る。
 
 ``` regex
 (\u005b\d+(?:[\u002c\u002d\u2013\u2014]\d+)*\u005d)
@@ -183,7 +183,7 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 ###### Custom Tags Regular Expressions
 
-The setting `tagValidation_customPattern` currently uses the following regular expression.
+Custom tags currently use the following regular expressions.
 
 ``` regex
 (\u005b\d+(?:[\u002c\u002d\u2013\u2014]\d+)*\u005d)
