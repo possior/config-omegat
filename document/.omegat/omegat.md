@@ -80,7 +80,7 @@ omegat
 
 ## 正規表現
 
-文字列をパターン認識する為に使用される表現様式を**正規表現**と言う。拡張された表現も存在するが、オメガティーは一般的な正規表現を用いて、タグ等を認識して居る。
+文字列をパターン認識する為に使用される表現様式を[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)と言う。拡張された表現も存在するが、オメガティーは一般的な正規表現を用いて、タグ等を認識して居る。
 
 ###### 正規表現：`tagValidation_customPattern`
 
@@ -162,7 +162,7 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 ## Regular Expression
 
-A **regular expression** (**regex**) is a formatted expression used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
+[Regular expressions (regex) (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) are formatted expressions used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
 
 ###### Regex：`tagValidation_customPattern`
 
