@@ -2,11 +2,11 @@
 
 ``` text
 xml
-└── omegat
-    └── preference
-        ├── tagValidateOnLeave
-        ├── tagValidation_customPattern
-        └── tagValidation_removePattern
+omegat
+└── preference
+    ├── tagValidateOnLeave
+    ├── tagValidation_customPattern
+    └── tagValidation_removePattern
 ```
 
 # オメガティー設定
