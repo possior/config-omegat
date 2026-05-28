@@ -17,7 +17,7 @@ VLDocking
 
 # オメガティー設定
 
-オメガティーのギットハブ・リポジトリ：
+オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
 
 - [omegat-org/omegat](https://github.com/omegat-org/omegat/)
 - [omegat-org/omegat/test-acceptance/data/config/uiLayout.xml](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/uiLayout.xml)
@@ -121,7 +121,7 @@ VLDocking
 
 # OmegaT Configuration
 
-OmegaT's GitHub repository:
+OmegaT's GitHub repository (external repository):
 
 - [omegat-org/omegat](https://github.com/omegat-org/omegat/)
 - [omegat-org/omegat/test-acceptance/data/config/uiLayout.xml](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/uiLayout.xml)
