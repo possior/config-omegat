@@ -158,7 +158,7 @@ Err that a tag does not match when moving to another segment.
 
 ###### Custom Tags
 
-Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identifies valid tags to be preserved in the translation result.
+Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identify valid tags to be preserved in the translation result.
 
 ``` xml
 <tagValidation_customPattern><!-- regular expression --></tagValidation_customPattern>
@@ -166,7 +166,7 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 ###### Flagged Text
 
-Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identifies tags to remove from the translation.
+Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identify tags to remove from the translation.
 
 ``` xml
 <tagValidation_removePattern><!-- regular expression --></tagValidation_removePattern>
