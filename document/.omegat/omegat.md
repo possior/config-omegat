@@ -36,7 +36,7 @@ omegat
 </omegat>
 ```
 
-ＸＭＬ宣言：`UTF-8`にエンコードした第`1.0`版`xml`を此ファイルで使用すると宣言する。
+ＸＭＬ宣言：`UTF-8`で符号化された第`1.0`版の`xml`形式である事を宣言する。
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -122,7 +122,7 @@ OmegaT's GitHub repository (external repository):
 </omegat>
 ```
 
-XML declaration - declare that the file uses `xml` version `1.0` encoded in `UTF-8`.
+XML declaration: declare to use the `xml` format version `1.0` encoded in `UTF-8`.
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
