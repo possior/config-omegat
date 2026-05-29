@@ -105,11 +105,32 @@ omegat
 
 ###### カスタムタグの正規表現
 
-カスタムタグには現在、以下の正規表現を使用して居る。
+現在、以下の正規表現が設定されて居る。
 
 ``` regex
-
+(\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D)
 ```
+
+番号付引用を認識する正規表現。
+
+``` regex
+\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D
+```
+
+- `\u005B`：`[`のユニコード表記。正規表現の特殊文字との混同を避ける。
+- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
+- `\d+`：１回以上繰り返される数字。引用文献の番号に相当する。
+- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
+- `(?:`〜`)*`：０回以上繰り返されるグループ。引用文献が複数ある場合を想定する。
+- `[`〜`]`：クラス。複数の文献を区切る記号に相当する。
+- `\u002C`：`,`のユニコード表記。正規表現の特殊文字との混同を避ける。
+- `\u002D`：`-`のユニコード表記。正規表現の特殊文字との混同を避ける。
+- `\u2013`：`–`のユニコード表記。正規表現の特殊文字との混同を避ける。
+- `\u2014`：`—`のユニコード表記。正規表現の特殊文字との混同を避ける。
+- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
+- `\d+`：１回以上繰り返される数字。引用文献の番号に相当する。
+- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
+- `\u005D`：`]`のユニコード表記。正規表現の特殊文字との混同を避ける。
 
 ###### フラグの設定されたテキストの正規表現
 
@@ -214,8 +235,29 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 Custom tags currently use the following regular expressions.
 
 ``` regex
-
+(\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D)
 ```
+
+The regular expression to recognize numeric citations.
+
+``` regex
+\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D
+```
+
+- `\u005B`: Unicode notation of `[`. This avoids confusion with regular expression special characters.
+- `\s*`: Whitespaces repeated zero or more times. This allows for input errors.
+- `\d+`: Digits reqeated one or more times. This is the number of the cited reference.
+- `\s*`: Whitespaces repeated zero or more times. This allows for input errors.
+- `(?:`〜`)*`: Groups repeated zero or more times. This handles multiple cited references.
+- `[`〜`]`: Class. This identifies the symbol that separates the numbers.
+- `\u002C`: Unicode notation of `,`. This avoids confusion with regular expression special characters.
+- `\u002D`: Unicode notation of `-`. This avoids confusion with regular expression special characters.
+- `\u2013`: Unicode notation of `–`. This avoids confusion with regular expression special characters.
+- `\u2014`: Unicode notation of `—`. This avoids confusion with regular expression special characters.
+- `\s*`: whitespaces repeated zero or more times. This allows for input errors.
+- `\d+`: Digits repeated one or more times. This is the number of the cited reference.
+- `\s*`: whitespaces repeated zero or more times. This allows for input errors.
+- `\u005D`: Unicode notation of `]`. This avoids confusion with regular expression special characters.
 
 ###### Flagged Text Regular Expressions
 
