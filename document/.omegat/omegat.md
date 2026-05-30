@@ -244,29 +244,6 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 ## Regular Expression
 
-[Regular expressions (regex) (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) are formatted expressions used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
-
-Below is a list of special expressions used in regular expressions. In order to distinguish from those expressions, notate other characters in Unicode or similar (code expression starting with `\u00` or `\u`).
-
-- `[`~`]`: Matches any one character listed inside.
-- `[^`~`]`: Does not match any one character listed inside.
-- `(`~`)`: Captures the string that matches the regular expression inside.
-- `(?:`~`)`: Treats the string that matches the regular expression inside as a single group.
-- `\d`: Matches a digit. Shorthand for `[\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039]`.
-- `\D`: Does not match a digit.
-- `\s`: Matches whitespace. Shorthand for `[\u0009\u000A\u000B\u000C\u000D]`.
-- `\S`: Does not match whitespace.
-- `\w`: Matches common alphanumeric characters. Shorthand for `[\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f]`.
-- `\W`: Does not match common alphanumeric characters.
-- `|`: Matches either the preceding or following character or expression.
-- `?`: Repeats the preceding character or expression zero or one time.
-- `*`: Repeats the preceding character or expression zero or more times.
-- `+`: Repeats the preceding character or expression one or more times.
-- `{`n`}`: Repeats the preceding character or expression exactly n times.
-- `{`n`,}`: Repeats the preceding character or expression n or more times.
-- `{,`m`}`: Repeats the preceding character or expression m or fewer times.
-- `{`n`,`m`}`: Repeats the preceding character or expression between n and m times (inclusive).
-
 ### Tag Processing Regular Expressions
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
