@@ -218,6 +218,27 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 [Regular expressions (regex) (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) are formatted expressions used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
 
+Below is a list of special expressions used in regular expressions. In order to distinguish from those expressions, notate other characters in Unicode or similar (code expression starting with `\x` or `\u`).
+
+- `[`~`]`: Matches any one character listed inside.
+- `[^`~`]`: Does not match any one character listed inside.
+- `(`~`)`: Captures the string that matches the regular expression inside.
+- `(?:`~`)`: Treats the string that matches the regular expression inside as a single group.
+- `\d`: Matches a digit. Shorthand for `[\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39]`.
+- `\D`: Does not match a digit.
+- `\s`: Matches whitespace. Shorthand for `[\x09\x0A\x0B\x0C\x0D]`.
+- `\S`: Does not match whitespace.
+- `\w`: Matches common alphanumeric characters. Shorthand for `[\x41\x42\x43\x44\x45\x46\x47\x48\x49\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x5f]`.
+- `\W`: Does not match common alphanumeric characters.
+- `|`: Matches either the preceding or following character or expression.
+- `?`: Repeats the preceding character or expression zero or one time.
+- `*`: Repeats the preceding character or expression zero or more times.
+- `+`: Repeats the preceding character or expression one or more times.
+- `{`n`}`: Repeats the preceding character or expression exactly n times.
+- `{`n`,}`: Repeats the preceding character or expression n or more times.
+- `{,`m`}`: Repeats the preceding character or expression m or fewer times.
+- `{`n`,`m`}`: Repeats the preceding character or expression between n and m times (inclusive).
+
 ### Tag Processing Regular Expressions
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
