@@ -141,13 +141,13 @@ omegat
 現在、カスタムタグには以下の正規表現が設定されて居る。各タグはグループとして`(`と`)`に括られて居り、タグ同士は`|`で区切られて居る。各タグの正規表現に就いては以降に其々詳述する。
 
 ``` regular expression
-(\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D])
+((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>))
 ```
 
 数式は全世界共通であるから、ラテフの数式ブロックはタグとして認識されるべきだ。数式ブロックは、`\(`、`\[`、`$`、及び`$$`から始まり、其々`\)`、`\]`、`$`、及び`$$`で終わる。`$`や`$$`を使用した数式ブロックは認識に失敗する可能性が有り、翻訳前に予め`\(\)`や`\[\]`に変換する事を推奨する。
 
 ``` regular expression
-\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D]
+(?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>)
 ```
 
 - `\u0024`：ユニコード`U+0024`の`$`。
@@ -291,13 +291,13 @@ For more detailed control with quantifiers, specify the number of repetitions us
 The regular expression below is currently set for custom tags. Each tag is grouped by `(` and `)`, and those tags are separated by `|`. Each tag's regular expression will be documented in detail below.
 
 ``` regular expression
-(\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D])
+((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>))
 ```
 
 Mathematics is universal, and therefore, mathematical equation block in LaTeX should be tagged. Those blocks start with `\(`, `\[`, `$`, and `$$` and end with `\)`, `\]`, `$`, and `$$` respectively. This expression may fail recognizing blocks that use `$` or `$$`; it is recommended to convert them to `\(\)` or `\[\]` in advance of translation.
 
 ``` regular expression
-\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D]
+(?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>)
 ```
 
 - `\u0024`: Unicode `U+0024` is `$`.
