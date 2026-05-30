@@ -3,7 +3,7 @@
   <preference version="1.0">
     <loose_tag_ordering>true</loose_tag_ordering>
     <tags_valid_required>true</tags_valid_required>
-    <tagValidation_customPattern>(\u003C[\u002F\u003F]?[\w\u002D]+\s*(?:[\w\u002D]+(?:\u003D\u0022[^\u0022]*\u0022|\u003D\u0027[^\u0027]*\u0027)?)*\s*[\u002F\u003F]?\u003E)|(\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D)</tagValidation_customPattern>
+    <tagValidation_customPattern></tagValidation_customPattern>
     <tagValidation_removePattern></tagValidation_removePattern>
   </preference>
 </omegat>
