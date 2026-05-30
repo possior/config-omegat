@@ -99,42 +99,34 @@ omegat
 
 文字列をパターン認識する為に使用される表現様式を[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)と言う。拡張された表現も存在するが、オメガティーは一般的な正規表現を用いて、タグ等を認識して居る。
 
+正規表現で使用される特殊な表現を以下に列挙する。此等の表現との混同を避ける為に、其他の文字はユニコード表記にする。
+
+- `[`〜`]`：内側に列挙された文字の何れか１文字に一致する。
+- `[^`〜`]`：内側に列挙された文字の何れか１文字に一致しない。
+- `(`〜`)`：内側の正規表現に一致する文字列を取得する。
+- `(?:`〜`)`：内側の正規表現に一致する文字列を一括りに扱う。
+- `\d`：数字に一致する。`0`、`1`、`2`、`3`、`4`、`5`、`6`、`7`、`8`、`9`。
+- `\D`：数字に一致しない。
+- `\s`：空白に一致する。` `、タブ、改行。
+- `\S`：空白に一致しない。
+- `\w`：一般的な英文字に一致する。。`A`、`B`、`C`、`D`、`E`、`F`、`G`、`H`、`I`、`J`、`K`、`L`、`M`、`N`、`O`、`P`、`Q`、`R`、`S`、`T`、`U`、`V`、`W`、`X`、`Y`、`Z`、`a`、`b`、`c`、`d`、`e`、`f`、`g`、`h`、`i`、`j`、`k`、`l`、`m`、`n`、`o`、`p`、`q`、`r`、`s`、`t`、`u`、`v`、`w`、`x`、`y`、`z`、`0`、`1`、`2`、`3`、`4`、`5`、`6`、`7`、`8`、`9`、`_`。
+- `\W`：一般的な英文字に一致しない。
+- `|`：直前と直後の文字又は表現の何れかに一致する。
+- `?`：直前の文字又は表現を０回又は１回繰り返す。
+- `*`：直前の文字又は表現を０回以上繰り返す。
+- `+`：直前の文字又は表現を１回以上繰り返す。
+- `{`ｎ`}`：直前の文字又は表現をｎ回繰り返す。
+- `{`ｎ`,}`：直前の文字又は表現をｎ回以上繰り返す。
+- `{,`ｍ`}`：直前の文字又は表現をｍ回以下繰り返す。
+- `{`ｎ`,`ｍ`}`：直前の文字又は表現をｎ回以上ｍ回以下繰り返す。
+
 ### タグ処理の正規表現
 
 翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
 
 ###### カスタムタグの正規表現
 
-現在、以下の正規表現が設定されて居る。
-
-``` regex
-(\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D)
-```
-
-番号付引用を認識する正規表現。
-
-``` regex
-\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D
-```
-
-- `\u005B`：`[`のユニコード表記。正規表現の特殊文字との混同を避ける。
-- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
-- `\d+`：１回以上繰り返される数字。引用文献の番号に相当する。
-- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
-- `(?:`〜`)*`：０回以上繰り返されるグループ。引用文献が複数ある場合を想定する。
-- `[`〜`]`：クラス。複数の文献を区切る記号に相当する。
-- `\u002C`：`,`のユニコード表記。正規表現の特殊文字との混同を避ける。
-- `\u002D`：`-`のユニコード表記。正規表現の特殊文字との混同を避ける。
-- `\u2013`：`–`のユニコード表記。正規表現の特殊文字との混同を避ける。
-- `\u2014`：`—`のユニコード表記。正規表現の特殊文字との混同を避ける。
-- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
-- `\d+`：１回以上繰り返される数字。引用文献の番号に相当する。
-- `\s*`：０回以上繰り返される空白。入力ミスを許容する為だ。
-- `\u005D`：`]`のユニコード表記。正規表現の特殊文字との混同を避ける。
-
 ###### フラグの設定されたテキストの正規表現
-
-フラグの設定されたテキストには現在、正規表現を設定して居ない。
 
 # OmegaT Preferences
 
@@ -232,33 +224,4 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 ###### Custom Tags Regular Expressions
 
-Custom tags currently use the following regular expressions.
-
-``` regex
-(\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D)
-```
-
-The regular expression to recognize numeric citations.
-
-``` regex
-\u005B\s*\d+\s*(?:[\u002C\u002D\u2013\u2014]\s*\d+)*\s*\u005D
-```
-
-- `\u005B`: Unicode notation of `[`. This avoids confusion with regular expression special characters.
-- `\s*`: Whitespaces repeated zero or more times. This allows for input errors.
-- `\d+`: Digits reqeated one or more times. This is the number of the cited reference.
-- `\s*`: Whitespaces repeated zero or more times. This allows for input errors.
-- `(?:`〜`)*`: Groups repeated zero or more times. This handles multiple cited references.
-- `[`〜`]`: Class. This identifies the symbol that separates the numbers.
-- `\u002C`: Unicode notation of `,`. This avoids confusion with regular expression special characters.
-- `\u002D`: Unicode notation of `-`. This avoids confusion with regular expression special characters.
-- `\u2013`: Unicode notation of `–`. This avoids confusion with regular expression special characters.
-- `\u2014`: Unicode notation of `—`. This avoids confusion with regular expression special characters.
-- `\s*`: whitespaces repeated zero or more times. This allows for input errors.
-- `\d+`: Digits repeated one or more times. This is the number of the cited reference.
-- `\s*`: whitespaces repeated zero or more times. This allows for input errors.
-- `\u005D`: Unicode notation of `]`. This avoids confusion with regular expression special characters.
-
 ###### Flagged Text Regular Expressions
-
-Flagged text currently does not use regular expressions.
