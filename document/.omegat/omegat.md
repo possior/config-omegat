@@ -4,9 +4,9 @@
 xml
 omegat
 └── preference
-- ├── tagValidateOnLeave
-- ├── tagValidation_customPattern
-- └── tagValidation_removePattern
+   ├── tagValidateOnLeave
+   ├── tagValidation_customPattern
+   └── tagValidation_removePattern
 ```
 
 # オメガティーの環境設定
