@@ -138,6 +138,8 @@ omegat
 
 #### カスタムタグの正規表現
 
+現在、カスタムタグには以下の正規表現が設定されて居る。各タグはグループとして`(`と`)`に括られて居り、タグ同士は`|`で区切られて居る。各タグの正規表現に就いては以降に其々詳述する。
+
 ``` regular expression
 (\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D])
 ```
@@ -284,5 +286,11 @@ For more detailed control with quantifiers, specify the number of repetitions us
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
 #### Custom Tags Regular Expressions
+
+The regular expression below is currently set for custom tags. Each tag is grouped by `(` and `)`, and those tags are separated by `|`. Each tag's regular expression will be documented in detail below.
+
+``` regular expression
+(\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D])
+```
 
 #### Flagged Text Regular Expressions
