@@ -67,13 +67,13 @@ omegat
 
 翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
 
-###### 訳文におけるタグ順序の入れ替えを許可する
+#### 訳文におけるタグ順序の入れ替えを許可する
 
 ``` xml
 <loose_tag_ordering><!-- trueあるいはfalse --></loose_tag_ordering>
 ```
 
-###### タグに課題がある訳文ファイルの作成をブロックする
+#### タグに課題がある訳文ファイルの作成をブロックする
 
 ``` xml
 <tags_valid_required><!-- trueあるいはfalse --></tags_valid_required>
@@ -136,7 +136,7 @@ omegat
 
 翻訳前後で変更すべきでない箇所をタグとして予め認識するプロセスを[タグ処理（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing)という。
 
-###### カスタムタグの正規表現
+#### カスタムタグの正規表現
 
 ``` regular expression
 (\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D])
@@ -154,7 +154,7 @@ omegat
 - `\u005C`：ユニコード`U+005C`の`\`。
 - `\u005D`：ユニコード`U+005D`の`]`。
 
-###### フラグの設定されたテキストの正規表現
+#### フラグの設定されたテキストの正規表現
 
 # OmegaT Preferences
 
@@ -226,7 +226,7 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 <tags_valid_required><!-- true or false --></tags_valid_required>
 ``` 
 
-###### Custom Tags
+#### Custom Tags
 
 Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identify valid tags to be preserved in the translation result.
 
@@ -234,7 +234,7 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 <tagValidation_customPattern><!-- regular expressions --></tagValidation_customPattern>
 ```
 
-###### Flagged Text
+#### Flagged Text
 
 Define [regular expressions (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) that identify tags to remove from the translation.
 
@@ -283,6 +283,6 @@ For more detailed control with quantifiers, specify the number of repetitions us
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
-###### Custom Tags Regular Expressions
+#### Custom Tags Regular Expressions
 
-###### Flagged Text Regular Expressions
+#### Flagged Text Regular Expressions
