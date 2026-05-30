@@ -101,16 +101,18 @@ omegat
 
 任意の文字を認識する為に、正規表現に其の文字を含められる。例えば、`omegat`と云う文字列を認識する正規表現は`omegat`である。併し、正規表現に特有の役割を有する文字である**メタ文字**を認識する時に注意が必要だ。`java`依存の正規表現のメタ文字は、`<`、`(`、`[`、`{`、`\`、`^`、`-`、`=`、`$`、`!`、`|`、`]`、`}`、`)`、`?`、`*`、`+`、`.`、`>`である。本来はメタ文字に使用される文字を正規表現で認識する為には、`\`を付して`\<`、`\(`、`\[`、`\{`、`\\`、`\^`、`\-`、`\=`、`\$`、`\!`、`\|`、`\]`、`\}`、`\)`、`\?`、`\*`、`\+`、`\.`、`\>`と記述する。併し、非常に読み辛いので、本リポジトリではユニコード表記を採用して居る。ユニコードが`U+####`の文字を認識する、ユニコード表記の正規表現は`\u####`である。是に従えば、メタ文字に使用されて居る文字は`\`を伴わずに、`\u003c`、`\u0028`、`\u005b`、`\u007b`、`\u005c`、`\u005e`、`\u002d`、`\u003d`、`\u0024`、`\u0021`、`\u007c`、`\u005d`、`\u007d`、`\u0029`、`\u003f`、`\u002a`、`\u002b`、`\u002e`、`\u003e`で認識できる。少なくとも`\u####`の部分は特定の文字を認識して、其れ以外の文字はメタ文字であると分かるだろう。ユニコードの文字を対照する際には、其の正規表現が書かれて居たファイルに対応するドキュメント（`document`ディレクトリ内に格納）を参照する事。
 
-- `[`〜`]`：内側に列挙された文字の何れか１文字に一致する。
-- `[^`〜`]`：内側に列挙された文字の何れか１文字に一致しない。
+列挙された文字を**クラス**と呼ぶ。其の列挙された文字の内、何れか１文字と一致させる場合は`[`と`]`で括る。何れの１文字とも一致させない場合は`[^`と`]`で括る。詳細は[dev.java（外部リンク）](https://dev.java/learn/regex/character-classes/)を参照せよ。頻繁に用いられるクラスは既に略記が存在する。主要な略記を以下に挙げるが、[dev.java（外部リンク）](https://dev.java/learn/regex/predefined-character-classes/)も参照せよ。
+
+- `.`：任意の１文字。制限なし。
+- `\d`：数字の１文字。`[\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039]`の略。
+- `\D`：数字以外の１文字。`[^\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039]`の略。
+- `\s`：空白の１文字。`[\u0009\u000A\u000B\u000C\u000D]`の略。
+- `\S`：空白以外の１文字。`[^\u0009\u000A\u000B\u000C\u000D]`の略。
+- `\w`：一般的な英数字の１文字。`[\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f]`の略。
+- `\W`：一般的な英数字以外の１文字。`[^\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f]`の略。
+
 - `(`〜`)`：内側の正規表現に一致する文字列を取得する。
 - `(?:`〜`)`：内側の正規表現に一致する文字列を一括りに扱う。
-- `\d`：数字に一致する。`[\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39]`の略。
-- `\D`：数字に一致しない。
-- `\s`：空白に一致する。`[\x09\x0A\x0B\x0C\x0D]`の略。
-- `\S`：空白に一致しない。
-- `\w`：一般的な英文字に一致する。`[\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4a\x4b\x4c\x4d\x4e\x4f\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5a\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x5f]`の略。
-- `\W`：一般的な英文字に一致しない。
 - `|`：直前と直後の文字又は表現の何れかに一致する。
 - `?`：直前の文字又は表現を０回又は１回繰り返す。
 - `*`：直前の文字又は表現を０回以上繰り返す。
@@ -234,17 +236,17 @@ Define [regular expressions (external link)](https://omegat.sourceforge.io/manua
 
 [Regular expressions (regex) (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.appendices.html#app.regex) are formatted expressions used to recognize text in a pattern. Though there exists an expanded version, OmegaT uses general regular expression for recognizing tags.
 
-Below is a list of special expressions used in regular expressions. In order to distinguish from those expressions, notate other characters in Unicode or similar (code expression starting with `\x` or `\u`).
+Below is a list of special expressions used in regular expressions. In order to distinguish from those expressions, notate other characters in Unicode or similar (code expression starting with `\u00` or `\u`).
 
 - `[`~`]`: Matches any one character listed inside.
 - `[^`~`]`: Does not match any one character listed inside.
 - `(`~`)`: Captures the string that matches the regular expression inside.
 - `(?:`~`)`: Treats the string that matches the regular expression inside as a single group.
-- `\d`: Matches a digit. Shorthand for `[\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39]`.
+- `\d`: Matches a digit. Shorthand for `[\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039]`.
 - `\D`: Does not match a digit.
-- `\s`: Matches whitespace. Shorthand for `[\x09\x0A\x0B\x0C\x0D]`.
+- `\s`: Matches whitespace. Shorthand for `[\u0009\u000A\u000B\u000C\u000D]`.
 - `\S`: Does not match whitespace.
-- `\w`: Matches common alphanumeric characters. Shorthand for `[\x41\x42\x43\x44\x45\x46\x47\x48\x49\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6a\x6b\x6c\x6d\x6e\x6f\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7a\x5f]`.
+- `\w`: Matches common alphanumeric characters. Shorthand for `[\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f]`.
 - `\W`: Does not match common alphanumeric characters.
 - `|`: Matches either the preceding or following character or expression.
 - `?`: Repeats the preceding character or expression zero or one time.
