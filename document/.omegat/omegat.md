@@ -250,34 +250,34 @@ To recognize any arbitrary character, that character can be included in the regu
 
 The listed characters are called a **class**. To match any one of the listed characters, enclose them in `[` and `]`. To match none of the listed characters, enclose them in `[^` and `]`. For details, refer to dev.java (external link). Commonly used classes already have shorthand notations. Major shorthands are listed below; also refer to dev.java (external link).
 
-- .: Any single character. No restrictions.
-- \d: One digit character. Shorthand for [\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039].
-- \D: One non-digit character. Shorthand for [^\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039].
-- \s: One whitespace character. Shorthand for [\u0009\u000A\u000B\u000C\u000D].
-- \S: One non-whitespace character. Shorthand for [^\u0009\u000A\u000B\u000C\u000D].
-- \w: One general alphanumeric character. Shorthand for [\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f].
-- \W: One non-general alphanumeric character. Shorthand for [^\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f].
+- `.`: Any single character. No restrictions.
+- `\d`: One digit character. Shorthand for `[\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039]`.
+- `\D`: One non-digit character. Shorthand for `[^\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039]`.
+- `\s`: One whitespace character. Shorthand for `[\u0009\u000A\u000B\u000C\u000D]`.
+- `\S`: One non-whitespace character. Shorthand for `[^\u0009\u000A\u000B\u000C\u000D]`.
+- `\w`: One general alphanumeric character. Shorthand for `[\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f]`.
+- `\W`: One non-general alphanumeric character. Shorthand for `[^\u0041\u0042\u0043\u0044\u0045\u0046\u0047\u0048\u0049\u004a\u004b\u004c\u004d\u004e\u004f\u0050\u0051\u0052\u0053\u0054\u0055\u0056\u0057\u0058\u0059\u005a\u0061\u0062\u0063\u0064\u0065\u0066\u0067\u0068\u0069\u006a\u006b\u006c\u006d\u006e\u006f\u0070\u0071\u0072\u0073\u0074\u0075\u0076\u0077\u0078\u0079\u007a\u005f]`.
 
 A collection of characters or expressions is called a **group**. To retrieve the string matched by a group, enclose it in `(` and `)`; if retrieval is not needed, enclose it in `(?:` and `)`. If a string is retrieved, that string can be used within the regular expression. To use the string retrieved by the # th group, write `\#`. Regular expressions within a group can be arranged in parallel (equivalent to logical OR) using `|`.
 
 Expressions recognizing repetition of characters are called **quantifiers**. There are three types of quantifiers: (1) attempting matches while backtracking from the end of the target text, (2) attempting matches while advancing from the start of the target text, and (3) attempting only a full match of the entire target text. Below are the quantifiers and their types. For details, refer to dev.java (external link).
 
-- ?: Quantifier recognizing 0 to 1 repetition of the preceding character or expression (Type 1).
-- *: Quantifier recognizing 0 or more repetitions of the preceding character or expression (Type 1).
-- +: Quantifier recognizing 1 or more repetitions of the preceding character or expression (Type 1).
-- ??: Quantifier recognizing 0 to 1 repetition of the preceding character or expression (Type 2).
-- *?: Quantifier recognizing 0 or more repetitions of the preceding character or expression (Type 2).
-- +?: Quantifier recognizing 1 or more repetitions of the preceding character or expression (Type 2).
-- ?+: Quantifier recognizing 0 to 1 repetition of the preceding character or expression (Type 1).
-- *+: Quantifier recognizing 0 or more repetitions of the preceding character or expression (Type 1).
-- ++: Quantifier recognizing 1 or more repetitions of the preceding character or expression (Type 1).
+- `?`: Quantifier recognizing 0 to 1 repetition of the preceding character or expression (Type 1).
+- `*`: Quantifier recognizing 0 or more repetitions of the preceding character or expression (Type 1).
+- `+`: Quantifier recognizing 1 or more repetitions of the preceding character or expression (Type 1).
+- `??`: Quantifier recognizing 0 to 1 repetition of the preceding character or expression (Type 2).
+- `*?`: Quantifier recognizing 0 or more repetitions of the preceding character or expression (Type 2).
+- `+?`: Quantifier recognizing 1 or more repetitions of the preceding character or expression (Type 2).
+- `?+`: Quantifier recognizing 0 to 1 repetition of the preceding character or expression (Type 1).
+- `*+`: Quantifier recognizing 0 or more repetitions of the preceding character or expression (Type 1).
+- `++`: Quantifier recognizing 1 or more repetitions of the preceding character or expression (Type 1).
 
 For more detailed control with quantifiers, specify the number of repetitions using `{` and `}` as follows:
 
-- {n}: Recognizes exactly n repetitions of the preceding character or expression.
-- {n,}: Recognizes n or more repetitions of the preceding character or expression.
-- {,m}: Recognizes m or fewer repetitions of the preceding character or expression.
-- {n,m}: Recognizes n to m repetitions of the preceding character or expression.
+- `{`n`}`: Recognizes exactly n repetitions of the preceding character or expression.
+- `{`n`,}`: Recognizes n or more repetitions of the preceding character or expression.
+- `{,`m`}`: Recognizes m or fewer repetitions of the preceding character or expression.
+- `{`n,m`}`: Recognizes n to m repetitions of the preceding character or expression.
 
 ### Tag Processing Regular Expressions
 
