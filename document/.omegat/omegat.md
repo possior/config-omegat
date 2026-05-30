@@ -36,7 +36,7 @@ omegat
 <?xml version="1.0" encoding="UTF-8"?>
 <omegat>
   <preference version="1.0">
-- <!-- オメガティーの環境設定 -->
+    <!-- オメガティーの環境設定 -->
   </preference>
 </omegat>
 ```
@@ -186,7 +186,7 @@ OmegaT's GitHub repository (external repository):
 <?xml version="1.0" encoding="UTF-8"?>
 <omegat>
   <preference version="1.0">
-- <!-- omegat preferences -->
+    <!-- omegat preferences -->
   </preference>
 </omegat>
 ```
