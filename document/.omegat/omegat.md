@@ -294,4 +294,17 @@ The regular expression below is currently set for custom tags. Each tag is group
 (\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D])
 ```
 
+Mathematics is universal, and therefore, mathematical equation block in LaTeX should be tagged. Those blocks start with `\(`, `\[`, `$`, and `$$` and end with `\)`, `\]`, `$`, and `$$` respectively. This expression may fail recognizing blocks that use `$` or `$$`; it is recommended to convert them to `\(\)` or `\[\]` in advance of translation.
+
+``` regular expression
+\u005C[\u0028\u005B](?:[^\u005C]|\u005C[^\u0028\u0029\u005B\u005D])+\u005C[\u0029\u005D]
+```
+
+- `\u0024`: Unicode `U+0024` is `$`.
+- `\u0028`: Unicode `U+0028` is `(`.
+- `\u0029`: Unicode `U+0029` is `)`.
+- `\u005B`: Unicode `U+005B` is `[`.
+- `\u005C`: Unicode `U+005C` is `\`.
+- `\u005D`: Unicode `U+005D` is `]`.
+
 #### Flagged Text Regular Expressions
