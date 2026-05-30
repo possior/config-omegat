@@ -3,7 +3,7 @@
   <preference version="1.0">
     <loose_tag_ordering>true</loose_tag_ordering>
     <tags_valid_required>true</tags_valid_required>
-    <tagValidation_customPattern></tagValidation_customPattern>
+    <tagValidation_customPattern>((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>))</tagValidation_customPattern>
     <tagValidation_removePattern></tagValidation_removePattern>
   </preference>
 </omegat>
