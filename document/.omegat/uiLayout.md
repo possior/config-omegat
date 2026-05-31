@@ -87,7 +87,7 @@ VLDocking
 
 ## 各種設定
 
-###### 境界
+#### 境界
 
 パネルを分割する。水平方向に分割する場合は`orientation`を`0`に、垂直方向に分割する場合は`orientation`を`1`に設定する。又、分割する相対位置を`0`から`1`の尺度で`location`に指定する。
 
@@ -95,7 +95,7 @@ VLDocking
 <Split orientation="" location=""><!-- ペインの設定 --></Split>
 ```
 
-###### 相対位置
+#### 相対位置
 
 下部のバーのタブの相対位置を設定する。
 
@@ -103,7 +103,7 @@ VLDocking
 <RelativePosition x="" y="" w="" h=""/>
 ```
 
-###### ペイン
+#### ペイン
 
 ペインを作成する。ペインの名前は`Key`要素で指定する。
 
@@ -111,7 +111,7 @@ VLDocking
 <Dockable><!-- ペインの設定--></Dockable>
 ```
 
-###### ペイン名
+#### ペイン名
 
 ペインの名前を設定する。ペインには、コメント（`COMMENTS`）、辞書（`DICTIONARY`）、編集（`EDITOR`）、用語集（`GLOSSARY`）、機械翻訳（`MACHINE_TRANSLATE`）、参考訳文（`MATCH`）、メモ帳（`NOTES`）、複数訳文（`MULTIPLE_TRANS`）、及び文節属性（`SEGMENTPROPERTIES`）が在る。
 
@@ -190,7 +190,7 @@ The `TabGroups` element. It is uncertain why this element exists here.
 
 ## Various Settings
 
-###### Border
+#### Border
 
 Split the panel. If you would like to split it horizontally, set `orientation` to `0`, and if vertically, to `1`. Also, set a relative location to split in a scale from `0` to `1`.
 
@@ -198,7 +198,7 @@ Split the panel. If you would like to split it horizontally, set `orientation` t
 <Split orientation="" location=""><!-- pane settings --></Split>
 ```
 
-###### Pane
+#### Pane
 
 Create a pane. Define the type by the `Key` element.
 
@@ -206,7 +206,7 @@ Create a pane. Define the type by the `Key` element.
 <Dockable><!-- pane settings --></Dockable>
 ```
 
-###### Pane Name
+#### Pane Name
 
 Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIONARIES`), editor (`EDITOR`), glossaries (`GLOSSARIES`), machine translations (`MACHINE_TRANSLATE`), fuzzy matches (`MATCH`), notepad (`NOTES`), multiple translations (`MULTIPLE_TRANS`), segment properties (`SEGMENTPROPERTIES`) panes.
 
@@ -214,7 +214,7 @@ Set the type of the pane. There are comments (`COMMENTS`), dictionaries (`DICTIO
 <Key dockName=""/>
 ``` 
 
-###### Relative Position
+#### Relative Position
 
 Set the relative position of a tab in the bar at the bottom.
 
