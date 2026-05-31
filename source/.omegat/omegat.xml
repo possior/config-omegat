@@ -3,7 +3,7 @@
   <preference version="1.0">
     <loose_tag_ordering>true</loose_tag_ordering>
     <tags_valid_required>true</tags_valid_required>
-    <tagValidation_customPattern>(\u003C[\u0021\u002F\u003F]?[\w\u002D]+\s*(?:[\w\u002D]+(?:\u003D\u0022[^\u0022]*\u0022|\u003D\u0027[^\u0027]*\u0027)?)*\s*[\u002F\u003F]?\u003E|\u003C\u0021\u002D{2}.*?\u002D{2}\u003E)|((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>)(?=$|[^\u0024]))</tagValidation_customPattern>
+    <tagValidation_customPattern>(\u003C[\u0021\u002F\u003F]?[\w\u002D]+\s*(?:[\w\u002D]+(?:\u003D\u0022[^\u0022]*\u0022|\u003D\u0027[^\u0027]*\u0027)?)*\s*[\u002F\u003F]?\u003E|\u003C\u0021\u002D{2}.*?\u002D{2}\u003E)|((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])\u0024)(?:[^\u0024\u005C]|\u005C.)*\u0024(?=$|[^\u0024])|(?=^|[^\u0024])\u0024{2}(?:[^\u0024\u005C]|\u005C.)*\u0024{2}(?=$|[^\u0024]))</tagValidation_customPattern>
     <tagValidation_removePattern></tagValidation_removePattern>
   </preference>
 </omegat>
