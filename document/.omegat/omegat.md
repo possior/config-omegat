@@ -307,8 +307,24 @@ For more detailed control with quantifiers, specify the number of repetitions us
 The regular expression below is currently set for custom tags. Each tag is grouped by `(` and `)`, and those tags are separated by `|`. Each tag's regular expression will be documented in detail below.
 
 ``` regular expression
-((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>))
+(\u003C[\u0021\u002F\u003F]?[\w\u002D]+\s*(?:[\w\u002D]+(?:\u003D\u0022[^\u0022]*\u0022|\u003D\u0027[^\u0027]*\u0027)?)*\s*[\u002F\u003F]?\u003E|\u003C\u0021\u002D{2}.*?\u002D{2}\u003E)|((?=^|[^\u005C])\u005C\u0028(?:[^\u005C]|\u005C[^\u0029])*\u005C\u0029|(?=^|[^\u005C])\u005C\u005B(?:[^\u005C]|\u005C[^\u005D])*\u005C\u005D|(?=^|[^\u0024])(?<latexmathdollar>\u0024{1,2})(?:[^\u0024\u005C]|\u005C.)*(?:\k<latexmathdollar>)(?=$|[^\u0024]))
 ```
+
+Tags in HTML and etc. are universal across languages, and they must be recognized as tags also in OmegaT. They start with `<` and end with `>`. There are three types: declaration, starting, and ending tags. Additionally, you can add attributes to the tags, and those are recognized as a part of the tags as they do not change in translation.
+
+``` regular expression
+\u003C[\u0021\u002F\u003F]?[\w\u002D]+\s*(?:[\w\u002D]+(?:\u003D\u0022[^\u0022]*\u0022|\u003D\u0027[^\u0027]*\u0027)?)*\s*[\u002F\u003F]?\u003E|\u003C\u0021\u002D{2}.*?\u002D{2}\u003E
+```
+
+- `\u0021`: Unicode `U+0021` is `!`.
+- `\u0022`: Unicode `U+0022` is `"`.
+- `\u0027`: Unicode `U+0027` is `'`.
+- `\u002D`: Unicode `U+002D` is `-`.
+- `\u002F`: Unicode `U+002F` is `/`.
+- `\u003C`: Unicode `U+003C` is `<`.
+- `\u003D`: Unicode `U+003D` is `=`.
+- `\u003E`: Unicode `U+003E` is `>`.
+- `\u003F`: Unicode `U+003F` is `?`.
 
 Mathematics is universal, and therefore, mathematical equation block in LaTeX should be tagged. Those blocks start with `\(`, `\[`, `$`, and `$$` and end with `\)`, `\]`, `$`, and `$$` respectively. This expression may fail recognizing blocks that use `$` or `$$`; it is recommended to convert them to `\(\)` or `\[\]` in advance of translation.
 
