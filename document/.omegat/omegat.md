@@ -79,7 +79,7 @@ omegat
 <tags_valid_required><!-- trueあるいはfalse --></tags_valid_required>
 ``` 
 
-###### カスタムタグ
+#### カスタムタグ
 
 翻訳結果に反映すべきタグを識別する[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)を定義する。
 
@@ -87,7 +87,7 @@ omegat
 <tagValidation_customPattern><!-- 正規表現 --></tagValidation_customPattern>
 ```
 
-###### フラグの設定されたテキスト
+#### フラグの設定されたテキスト
 
 翻訳対象から自動で削除するタグを識別する[正規表現（外部リンク）](https://omegat.sourceforge.io/manual-standard/ja/chapter.appendices.html#app.regex)を定義する。
 
@@ -233,13 +233,13 @@ The `preference` element that stores OmegaT preferences version `1.0`.
 
 [Tag processing (external link)](https://omegat.sourceforge.io/manual-standard/en/chapter.dialogs.preferences.html#dialogs.preferences.tag.processing) is a process that recognizes the parts you should not modify during translation as tags in advance.
 
-###### Allow Translated Tags to Be in a Different Order
+#### Allow Translated Tags to Be in a Different Order
 
 ``` xml
 <loose_tag_ordering><!-- true or false --></loose_tag_ordering>
 ```
 
-###### Block the Creation of Translated Files with Tag Issues
+#### Block the Creation of Translated Files with Tag Issues
 
 ``` xml
 <tags_valid_required><!-- true or false --></tags_valid_required>
