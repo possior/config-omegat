@@ -1,4 +1,4 @@
-[日本語](#オメガティーの環境設定)｜[English](#omegat-preferences)｜[`omegat.prefs`](../src/omegat.prefs)
+[日本語](#omegatの環境設定)｜[English](#omegat-preferences)｜[`omegat.prefs`](../src/omegat.prefs)
 
 ``` text
 xml
@@ -9,7 +9,7 @@ omegat
    └── tagValidation_removePattern
 ```
 
-# オメガティーの環境設定
+# OmegaTの環境設定
 
 オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
 
