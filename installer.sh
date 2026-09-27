@@ -26,7 +26,7 @@ do
         behavior=overwrite
         shift 1
       else
-        echo "!! detected conflicting behavior flags"
+        echo "!! $1 cannot be used multiple times"
         exit
       fi
       ;;
@@ -37,7 +37,7 @@ do
         behavior=preserve
         shift 1
       else
-        echo "!! detected conflicting behavior flags"
+        echo "!! $1 cannot be used multiple times"
         exit
       fi
       ;;
