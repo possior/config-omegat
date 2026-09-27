@@ -50,6 +50,18 @@ src=https://raw.githubusercontent.com/possior/config-omegat/default/src/
 cfg=${cfg:-$HOME/.config/omegat/}
 echo ":: initiated variables"
 
+function overwriter() {
+  curl -fsSLo ${cfg%/}/${2#/} ${1%/}/${2#/}
+}
+function preserver() {
+  if
+    [[ ! -f ${1%/}/${2#/} ]]
+  then
+    curl -fsSLo ${cfg%/}/${2#/} ${1%/}/${2#/}
+  fi
+}
+echo ":: initiated functions"
+
 if
   [[ ! -d $cfg ]]
 then
