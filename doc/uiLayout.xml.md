@@ -1,4 +1,4 @@
-[日本語](#オメガティーのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../src/uiLayout.xml)
+[日本語](#omegatのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../src/uiLayout.xml)
 
 ``` text
 <VLDocking>
@@ -14,7 +14,7 @@
     └── <TabGroups>
 ```
 
-# オメガティーのレイアウト
+# OmegaTのレイアウト
 
 オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
 
