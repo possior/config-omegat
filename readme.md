@@ -8,6 +8,9 @@
 
 - [利用許諾（CC0、0BSD）](./license.md)
 - [バージョン情報](./version.md)
+- [OmegaTの設定を適用](#omegatの設定を適用)
+
+## OmegaTの設定を適用
 
 # OmegaT Configuration
 
@@ -17,3 +20,6 @@ OmegaT configuration files that I reuse.
 
 - [License (CC0, 0BSD)](./license.md)
 - [Version Information](./version.md)
+- [Applying OmegaT Configuration](#applying-omegat-configuration)
+
+## Applying OmegaT Configuration
