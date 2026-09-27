@@ -7,9 +7,9 @@
 ## 目次
 
 - [利用許諾（CC0、0BSD）](./license.md)
+- [バージョン情報](./version.md)
 - [適用方法](#適用方法)
 - [説明書](#説明書)
-- [公開版一覧](#公開版一覧)
 
 ## 適用方法
 
@@ -41,9 +41,9 @@ OmegaT configuration files that I reuse.
 ## List of Contents
 
 - [License (CC0, 0BSD)](./license.md)
+- [Version Information](./version.md)
 - [How to Apply](#how-to-apply)
 - [Manuals](#manuals)
-- [List of Versions](#list-of-versions)
 
 ## How to Apply
 
