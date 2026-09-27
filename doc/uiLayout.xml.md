@@ -1,4 +1,4 @@
-[日本語](#オメガティーのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../../source/.omegat/uiLayout.xml)
+[日本語](#オメガティーのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../src/uiLayout.xml)
 
 ``` text
 xml
