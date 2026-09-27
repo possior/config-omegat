@@ -1,18 +1,17 @@
 [日本語](#オメガティーのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../src/uiLayout.xml)
 
 ``` text
-xml
-VLDocking
-└── DockingDesktop
-    ├── DockingPanel
-    │   └── Split
-    │       └── Dockable
-    │           └── Key
-    ├── Border
-    │   └── Dockable
-    │       ├── Key
-    │       └── RelativePosition
-    └── TabGroups
+<VLDocking>
+└── <DockingDesktop>
+    ├── <DockingPanel>
+    │   └── <Split>
+    │       └── <Dockable>
+    │           └── <Key>
+    ├── <Border>
+    │   └── <Dockable>
+    │       ├── <Key>
+    │       └── <RelativePosition>
+    └── <TabGroups>
 ```
 
 # オメガティーのレイアウト
