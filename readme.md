@@ -1,6 +1,6 @@
-[日本語](#オメガティーの設定)｜[English](#omegat-configuration)
+[日本語](#omegatの設定)｜[English](#omegat-configuration)
 
-# オメガティーの設定
+# OmegaTの設定
 
 使い回しのオメガティーの設定ファイル。
 
