@@ -1,4 +1,4 @@
-[日本語](#omegatの環境設定)｜[English](#omegat-preferences)｜[`omegat.prefs`](../src/omegat.prefs)
+[日本語](#omegatの環境設定)｜[English](#omegats-preferences)｜[`omegat.prefs`](../src/omegat.prefs)
 
 ``` text
 xml
@@ -175,7 +175,7 @@ omegat
 
 #### フラグの設定されたテキストの正規表現
 
-# OmegaT Preferences
+# OmegaT's Preferences
 
 OmegaT's GitHub repository (external repository):
 
