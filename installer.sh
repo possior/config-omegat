@@ -41,6 +41,10 @@ do
         exit
       fi
       ;;
+    *)
+      echo "!! $1 is unknown"
+      exit
+      ;;
   esac
 done
 echo ":: parsed arguments"
