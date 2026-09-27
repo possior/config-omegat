@@ -51,3 +51,10 @@ src=https://raw.githubusercontent.com/possior/config-omegat/default/src/
 cfg=${cfg:-$HOME/.config/omegat/}
 
 echo ":: initiated variables"
+
+if
+  [[ ! -d $cfg ]]
+then
+  mkdir -p $cfg
+  echo ":: created $cfg"
+fi
