@@ -11,11 +11,6 @@ omegat
 
 # OmegaTの環境設定
 
-オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
-
-- [omegat-org/omegat](https://github.com/omegat-org/omegat/)
-- [omegat-org/omegat/test-acceptance/data/config/omegat.prefs](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/omegat.prefs)
-
 ## 目次
 
 - [基本構造](#基本構造)
@@ -176,11 +171,6 @@ omegat
 #### フラグの設定されたテキストの正規表現
 
 # OmegaT's Preferences
-
-OmegaT's GitHub repository (external repository):
-
-- [omegat-org/omegat](https://github.com/omegat-org/omegat/)
-- [omegat-org/omegat/test-acceptance/data/config/omegat.prefs](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/omegat.prefs)
 
 ## Table of Contents
 
