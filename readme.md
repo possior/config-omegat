@@ -17,6 +17,10 @@
 - `-o`, `--overwrite`：設定ファイルが既に存在する場合は上書きする。
 - `-p`, `--preserve`：設定ファイルが既に存在する場合は上書きしない。
 
+```bash
+curl -fsSL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s -- 
+```
+
 # OmegaT Configuration
 
 OmegaT configuration files that I reuse.
@@ -33,3 +37,7 @@ To apply the latest configuration, execute the following command. You can modify
 
 - `-o`, `--overwrite`: overwrite if configuration files already exist
 - `-p`, `--preserve`: don't overwrite if configuration files already exist
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s -- 
+```
