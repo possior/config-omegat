@@ -9,7 +9,6 @@
 - [利用許諾（CC0、0BSD）](./license.md)
 - [バージョン情報](./version.md)
 - [適用方法](#適用方法)
-- [説明書](#説明書)
 
 ## 適用方法
 
@@ -25,15 +24,6 @@ bash <(curl -sL https://raw.githubusercontent.com/possior/config-omegat/default/
 - `-o` `--os` `--operating-system` `--system`<br>実装先のＯＳを指定する。`arch`系統のＯＳが標準で選択されて居る。
 - `-v` `--ver` `--version`<br>実装する版号を指定する。[ブランチ](https://github.com/possior/config-omegat/branches/)でも[タグ](https://github.com/possior/config-omegat/tags/)でも指定できる。
 
-## 説明書
-
-- [`omegat.prefs`](./document/.omegat/omegat.md)
-- [`uiLayout.xml`](./document/.omegat/uiLayout.md)
-
-## 公開版一覧
-
-[`version.md`](./version.md)を参照せよ。
-
 # OmegaT Configuration
 
 OmegaT configuration files that I reuse.
@@ -43,7 +33,6 @@ OmegaT configuration files that I reuse.
 - [License (CC0, 0BSD)](./license.md)
 - [Version Information](./version.md)
 - [How to Apply](#how-to-apply)
-- [Manuals](#manuals)
 
 ## How to Apply
 
@@ -58,12 +47,3 @@ To change the implementation method, add options listed below to this command.
 - `-d` `--default`<br>[**WARNING**] install each configuration file without prompting your decision. This may override the existing configuration.
 - `-o` `--os` `--operating-system` `--system`<br>Specify the OS to install on. The default OS is Arch-based.
 - `-v` `--ver` `--version`<br>Specify the version number to install. You can specify either a [branch](https://github.com/possior/config-omegat/branches/) or [tag](https://github.com/possior/config-omegat/tags/).
-
-## Manuals
-
-- [`omegat.prefs`](./document/.omegat/omegat.md)
-- [`uiLayout.xml`](./document/.omegat/uiLayout.md)
-
-## List of Versions
-
-Reference [`version.md`](./version.md).
