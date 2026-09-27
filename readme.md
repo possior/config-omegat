@@ -10,6 +10,8 @@
 - [バージョン情報](./version.md)
 - [OmegaTの設定を適用](#omegatの設定を適用)
 - 技術文書
+  - [`omegat.prefs`](./doc/omegat.prefs.md)
+  - [`uiLayout.xml`](./doc/uiLayout.xml.md)
 
 ## OmegaTの設定を適用
 
@@ -32,6 +34,8 @@ OmegaT configuration files that I reuse.
 - [Version Information](./version.md)
 - [Applying OmegaT Configuration](#applying-omegat-configuration)
 - Technical Documents
+  - [`omegat.prefs`](./doc/omegat.prefs.md)
+  - [`uiLayout.xml`](./doc/uiLayout.xml.md)
 
 ## Applying OmegaT Configuration
 
