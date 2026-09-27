@@ -30,7 +30,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <omegat>
   <preference version="1.0">
-    <!-- オメガティーの環境設定 -->
+    <!-- OmegaTの環境設定 -->
   </preference>
 </omegat>
 ```
