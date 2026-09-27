@@ -87,3 +87,4 @@ case ${behavior:-overwrite} in
     echo ":: downloaded documentation files (preserve)"
     ;;
 esac
+echo ":: completed installation"
