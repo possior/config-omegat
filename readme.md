@@ -9,6 +9,7 @@
 - [利用許諾（CC0、0BSD）](./license.md)
 - [バージョン情報](./version.md)
 - [OmegaTの設定を適用](#omegatの設定を適用)
+- [OmegaTの挙動を設定](#omegatの挙動を設定)
 - 技術文書
   - [`omegat.prefs`](./doc/omegat.prefs.md)
   - [`uiLayout.xml`](./doc/uiLayout.xml.md)
@@ -25,6 +26,8 @@
 curl -fsSL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s -- 
 ```
 
+## OmegaTの挙動を設定
+
 # OmegaT Configuration
 
 OmegaT configuration files that I reuse.
@@ -34,6 +37,7 @@ OmegaT configuration files that I reuse.
 - [License (CC0, 0BSD)](./license.md)
 - [Version Information](./version.md)
 - [Applying OmegaT Configuration](#applying-omegat-configuration)
+- [Configuring OmegaT's Behavior](#configuring-omegats-behavior)
 - Technical Documents
   - [`omegat.prefs`](./doc/omegat.prefs.md)
   - [`uiLayout.xml`](./doc/uiLayout.xml.md)
@@ -49,3 +53,5 @@ To apply the latest configuration, execute the following command. You can modify
 ```bash
 curl -fsSL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s -- 
 ```
+
+## Configuring OmegaT's Behavior
