@@ -1,4 +1,4 @@
-[日本語](#omegatのレイアウト)｜[English](#omegat-layout)｜[`uiLayout.xml`](../src/uiLayout.xml)
+[日本語](#omegatのレイアウト)｜[English](#omegats-layout)｜[`uiLayout.xml`](../src/uiLayout.xml)
 
 ``` text
 <VLDocking>
@@ -113,7 +113,7 @@
 <Key dockName=""/>
 ``` 
 
-# OmegaT Layout
+# OmegaT's Layout
 
 ## Table of Contents
 
