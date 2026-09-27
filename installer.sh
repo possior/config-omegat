@@ -87,7 +87,7 @@ case ${behavior:-overwrite} in
     preserver $src uiLayout.xml
     echo ":: downloaded configuration files (preserve)"
     preserver $doc omegat.prefs.md
-    preserver $src uiLayout.xml.md
+    preserver $doc uiLayout.xml.md
     echo ":: downloaded documentation files (preserve)"
     ;;
 esac
