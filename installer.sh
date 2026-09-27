@@ -68,3 +68,22 @@ then
   mkdir -p $cfg
   echo ":: created $cfg"
 fi
+
+case ${behavior:-overwrite} in
+  overwrite)
+    overwriter $src omegat.prefs
+    overwriter $src uiLayout.xml
+    echo ":: downloaded configuration files (overwrite)"
+    overwriter $doc omegat.prefs.md
+    overwriter $doc uiLayout.xml.md
+    echo ":: downloaded documentation files (overwrite)"
+    ;;
+  preserve)
+    preserver $src omegat.prefs
+    preserver $src uiLayout.xml
+    echo ":: downloaded configuration files (preserve)"
+    preserver $doc omegat.prefs.md
+    preserver $src uiLayout.xml.md
+    echo ":: downloaded documentation files (preserve)"
+    ;;
+esac
