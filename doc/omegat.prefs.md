@@ -1,12 +1,11 @@
 [日本語](#omegatの環境設定)｜[English](#omegats-preferences)｜[`omegat.prefs`](../src/omegat.prefs)
 
 ``` text
-xml
-omegat
-└── preference
-   ├── tagValidateOnLeave
-   ├── tagValidation_customPattern
-   └── tagValidation_removePattern
+<omegat>
+└── <preference>
+   ├── <tagValidateOnLeave>
+   ├── <tagValidation_customPattern>
+   └── <tagValidation_removePattern>
 ```
 
 # OmegaTの環境設定
