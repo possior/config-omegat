@@ -1,6 +1,6 @@
-[日本語](#公開版一覧)｜[English](#list-of-versions)
+[日本語](#バージョン情報)｜[English](#version-information)
 
-# 公開版一覧
+# バージョン情報
 
 | 版号 | 接続先 |
 |:---:|:--- |
@@ -11,7 +11,7 @@
 | `01.01.02` | [リポジトリ](https://github.com/possior/config-omegat/tree/ver.01.01.02/)、[リリース](https://github.com/possior/config-omegat/releases/tag/ver.01.01.02/) |
 | `01.01.01` | [リポジトリ](https://github.com/possior/config-omegat/tree/ver.01.01.01/)、[リリース](https://github.com/possior/config-omegat/releases/tag/ver.01.01.01/) |
 
-# List of Versions
+# Version Information
 
 | Version | Links |
 |:---:|:--- |
