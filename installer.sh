@@ -44,6 +44,8 @@ do
   esac
 done
 
+echo ":: parsed arguments"
+
 doc=https://raw.githubusercontent.com/possior/config-omegat/default/doc/
 src=https://raw.githubusercontent.com/possior/config-omegat/default/src/
 cfg=${cfg:-$HOME/.config/omegat/}
