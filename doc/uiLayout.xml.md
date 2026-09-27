@@ -16,11 +16,6 @@
 
 # OmegaTのレイアウト
 
-オメガティーのギットハブ・リポジトリ（外部リポジトリ）：
-
-- [omegat-org/omegat](https://github.com/omegat-org/omegat/)
-- [omegat-org/omegat/test-acceptance/data/config/uiLayout.xml](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/uiLayout.xml)
-
 ## 目次
 
 - [基本構造](#基本構造)
@@ -119,11 +114,6 @@
 ``` 
 
 # OmegaT Layout
-
-OmegaT's GitHub repository (external repository):
-
-- [omegat-org/omegat](https://github.com/omegat-org/omegat/)
-- [omegat-org/omegat/test-acceptance/data/config/uiLayout.xml](https://raw.githubusercontent.com/omegat-org/omegat/master/test-acceptance/data/config/uiLayout.xml)
 
 ## Table of Contents
 
