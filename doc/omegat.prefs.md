@@ -15,14 +15,14 @@
 - [基本構造](#基本構造)
 - [環境設定](#環境設定)
   - [タグ処理](#タグ処理)
-- - [カスタムタグ](#カスタムタグ)
-- - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
+  - [カスタムタグ](#カスタムタグ)
+  - [フラグの設定されたテキスト](#フラグの設定されたテキスト)
 - [正規表現](#正規表現)
   - [タグ処理の正規表現](#タグ処理の正規表現)
-- - [訳文におけるタグ順序の入れ替えを許可する](#訳文におけるタグ順序の入れ替えを許可する)
-- - [タグに課題がある訳文ファイルの作成をブロックする](#タグに課題がある訳文ファイルの作成をブロックする)
-- - [カスタムタグの正規表現](#カスタムタグの正規表現)
-- - [フラグの設定されたテキストの正規表現](#フラグの設定されたテキストの正規表現)
+  - [訳文におけるタグ順序の入れ替えを許可する](#訳文におけるタグ順序の入れ替えを許可する)
+  - [タグに課題がある訳文ファイルの作成をブロックする](#タグに課題がある訳文ファイルの作成をブロックする)
+  - [カスタムタグの正規表現](#カスタムタグの正規表現)
+  - [フラグの設定されたテキストの正規表現](#フラグの設定されたテキストの正規表現)
 
 ## 基本構造
 
@@ -176,14 +176,14 @@
 - [Basic Structure](#basic-structure)
 - [Preferences](#preferences)
   - [Tag Processing](#tag-processing)
-- - [Custom Tags](#custom-tags)
-- - [Flagged Text](#flagged-text)
+  - [Custom Tags](#custom-tags)
+  - [Flagged Text](#flagged-text)
 - [Regular Expression](#regular-expression)
   - [Tag Processing Regular Expressions](#tag-processing-regular-expressions)
-- - [Allow Translated Tags to Be in a Different Order](#allow-translated-tags-to-be-in-a-different-order)
-- - [Block the Creation of Translated Files with Tag Issues](#block-the-creation-of-translated files-with-tag-issues)
-- - [Custom Tags Regular Expressions](#custom-tags-regular-expressions)
-- - [Flagged Text Regular Expressions](#flagged-text-tegular-expressions)
+  - [Allow Translated Tags to Be in a Different Order](#allow-translated-tags-to-be-in-a-different-order)
+  - [Block the Creation of Translated Files with Tag Issues](#block-the-creation-of-translated files-with-tag-issues)
+  - [Custom Tags Regular Expressions](#custom-tags-regular-expressions)
+  - [Flagged Text Regular Expressions](#flagged-text-tegular-expressions)
 
 ## Basic Structure
 
