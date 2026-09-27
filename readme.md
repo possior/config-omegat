@@ -35,8 +35,8 @@ OmegaT configuration files that I reuse.
 
 To apply the latest configuration, execute the following command. You can modify the behavior by adding the following flags and options after the command.
 
-- `-o`, `--overwrite`: overwrite if configuration files already exist
-- `-p`, `--preserve`: don't overwrite if configuration files already exist
+- `-o`, `--overwrite`: overwrite if configuration files already exist.
+- `-p`, `--preserve`: don't overwrite if configuration files already exist.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/possior/config-omegat/default/installer.sh | bash -s -- 
