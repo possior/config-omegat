@@ -1,7 +1,3 @@
-doc=https://raw.githubusercontent.com/possior/config-omegat/default/doc/
-src=https://raw.githubusercontent.com/possior/config-omegat/default/src/
-cfg=$HOME/.config/omegat/
-
 while
   [[ $# -gt 0 ]]
 do
@@ -47,3 +43,7 @@ do
       ;;
   esac
 done
+
+doc=https://raw.githubusercontent.com/possior/config-omegat/default/doc/
+src=https://raw.githubusercontent.com/possior/config-omegat/default/src/
+cfg=$HOME/.config/omegat/
